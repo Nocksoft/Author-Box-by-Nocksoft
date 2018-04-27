@@ -1,0 +1,35 @@
+#. Description of the plugin/theme
+msgid "Adds a modern author info box at the end of your posts and implements local avatars as an alternative to Gravatar."
+msgstr "F&uuml;gt eine moderne Autoren Box am Ende deines Beitrages ein und implementiert lokale Avatare als eine Alternative zu Gravatar."
+
+#: authorbox.php:15
+msgid "About"
+msgstr "&Uuml;ber"
+
+#: settings-global.php.php:34
+msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
+msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
+
+#: settings-global.php.php:38
+msgid "Size of Avatar (Pixel)"
+msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
+
+#: settings-global.php:44
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: settings-user.php:12
+msgid "Here you can make further settings for your avatar. However, you will get the best results if the image has the same width and height dimensions."
+msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar vornehmen. Jedoch erh&auml;ltst du das beste Ergebnis, wenn die Ma&szlig;e von H&ouml;he und Breite gleich sind."
+
+#: settings-user.php:16
+msgid "Local avatars"
+msgstr "Lokale Avatare"
+
+#: settings-user.php:19
+msgid "Use local avatars instead of Gravatar"
+msgstr "Verwende lokale Avatare an Stelle von Gravatar"
+
+#: settings-user.php:28
+msgid "Please enter a valid URL to your avatar."
+msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an."
