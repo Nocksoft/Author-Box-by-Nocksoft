@@ -19,7 +19,7 @@
 
 #author-box-by-nocksoft #nstab_wrapper #nstab_authorbio span {
     font-weight: bold;
-    font-size: 1.1em;
+    display: block;
 }
 
 #author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p {

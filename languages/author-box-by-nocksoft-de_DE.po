@@ -2,19 +2,23 @@
 msgid "Adds a modern author info box at the end of your posts and implements local avatars as an alternative to Gravatar."
 msgstr "F&uuml;gt eine moderne Autoren Box am Ende deines Beitrages ein und implementiert lokale Avatare als eine Alternative zu Gravatar."
 
-#: authorbox.php:15
+#: authorbox.php:18
 msgid "About"
 msgstr "&Uuml;ber"
 
-#: settings-global.php.php:34
+#: settings-global.php.php:36
 msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php.php:38
+#: settings-global.php.php:40
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php:44
+#: settings-global.php.php:45
+msgid "Fontsize of Header (em)"
+msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
+
+#: settings-global.php:51
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
