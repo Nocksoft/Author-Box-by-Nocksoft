@@ -3,7 +3,7 @@ Contributors: nocksoft
 Tags: author box, author bio, author description, author profile, about author, about me, author
 Stable tag: trunk
 Requires at least: 4.9
-Tested up to: 4.9.5
+Tested up to: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,10 @@ You can adjust settings in the user profile settings and in the global settings 
 4. Activate the plugin in the "Plugins" menu in WordPress.
 
 == Changelog ==
+
+= 1.x.x =
+* font size of the headline can now be adjusted
+* option added that allows just replace Gravatar through local avatars without displaying Avatar Box
 
 = 1.0.0 =
 * first release
