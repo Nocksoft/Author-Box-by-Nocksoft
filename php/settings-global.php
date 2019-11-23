@@ -16,6 +16,7 @@ add_action("admin_menu", "nstab_settings_page");
 add_action("admin_init", function() {
 	register_setting("nstab_settings", "nstab_setting_avatarsize");
     register_setting("nstab_settings", "nstab_setting_fontsizeheader");
+    register_setting("nstab_settings", "nstab_setting_justlocalavatar");
 });
 
 
@@ -44,6 +45,11 @@ function nstab_globalsettings() {
                 <tr valign="top">
                 <th scope="row"><?php echo __("Fontsize of Header (em)", "author-box-by-nocksoft"); ?></th>
                 <td><input type="number" name="nstab_setting_fontsizeheader" min="0.3" max="3" step="0.1" value="<?php echo $fontsizeheader; ?>" /></td>
+                </tr>
+
+                <tr valign="top">
+                <th scope="row"><?php echo __("Just use local Avatars and hide Author Box", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_justlocalavatar" <?php if (get_option("nstab_setting_justlocalavatar") == true) echo "checked"; ?> /></td>
                 </tr>
             </table>
 

@@ -6,19 +6,23 @@ msgstr "F&uuml;gt eine moderne Autoren Box am Ende deines Beitrages ein und impl
 msgid "About"
 msgstr "&Uuml;ber"
 
-#: settings-global.php.php:36
+#: settings-global.php.php:37
 msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php.php:40
+#: settings-global.php.php:41
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php.php:45
+#: settings-global.php.php:46
 msgid "Fontsize of Header (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
-#: settings-global.php:51
+#: settings-global.php.php:51
+msgid "Just use local Avatars and hide Author Box"
+msgstr "Nutze lediglich lokale Avatare und blende Author Box aus"
+
+#: settings-global.php:57
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
