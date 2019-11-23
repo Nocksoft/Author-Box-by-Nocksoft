@@ -16,7 +16,7 @@ add_action("admin_menu", "nstab_settings_page");
 add_action("admin_init", function() {
 	register_setting("nstab_settings", "nstab_setting_avatarsize");
     register_setting("nstab_settings", "nstab_setting_fontsizeheader");
-    register_setting("nstab_settings", "nstab_setting_justlocalavatar");
+    register_setting("nstab_settings", "nstab_setting_dontdisplayauthorbox");
 });
 
 
@@ -48,8 +48,8 @@ function nstab_globalsettings() {
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Just use local Avatars and hide Author Box", "author-box-by-nocksoft"); ?></th>
-                <td><input type="checkbox" name="nstab_setting_justlocalavatar" <?php if (get_option("nstab_setting_justlocalavatar") == true) echo "checked"; ?> /></td>
+                <th scope="row"><?php echo __("Do not show Author Box (useful if an Author Biography is displayed by a theme or another plugin)", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_dontdisplayauthorbox" <?php if (get_option("nstab_setting_dontdisplayauthorbox") == true) echo "checked"; ?> /></td>
                 </tr>
             </table>
 

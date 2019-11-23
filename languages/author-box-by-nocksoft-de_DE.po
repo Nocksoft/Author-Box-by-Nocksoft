@@ -19,8 +19,8 @@ msgid "Fontsize of Header (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
 #: settings-global.php.php:51
-msgid "Just use local Avatars and hide Author Box"
-msgstr "Nutze lediglich lokale Avatare und blende Author Box aus"
+msgid "Do not show Author Box (useful if an Author Biography is displayed by a theme or another plugin)"
+msgstr "Verstecke die Author Box (Sinnvoll, wenn eine Autor-Biographie von einem Theme oder einem anderen Plugin angezeigt wird)"
 
 #: settings-global.php:57
 msgid "Save Settings"

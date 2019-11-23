@@ -4,7 +4,7 @@
 /* Draw HTML */
 add_filter("the_content", "nstab_add_authorbox");
 function nstab_add_authorbox($content) {
-    if (get_option("nstab_setting_justlocalavatar") == false && is_single()) {
+    if (get_option("nstab_setting_dontdisplayauthorbox") == false && is_single()) {
         $avatarsize = esc_attr(get_option('nstab_setting_avatarsize'));
         
         require_once plugin_dir_path(__FILE__) . 'settings-defaults.php';

@@ -4,14 +4,14 @@ function nstab_activate_plugin() {
     /* Default settings */
     add_option("nstab_setting_avatarsize", "100");
     add_option("nstab_setting_fontsizeheader", "1.1");
-    add_option("nstab_setting_justlocalavatar", "");
+    add_option("nstab_setting_dontdisplayauthorbox", "");
 }
 
 function nstab_uninstall_plugin() {
     /* Clear global settings */
     delete_option("nstab_setting_avatarsize");
     delete_option("nstab_setting_fontsizeheader");
-    delete_option("nstab_setting_justlocalavatar");
+    delete_option("nstab_setting_dontdisplayauthorbox");
 
     /* Clear user settings */
     $users = get_users();
