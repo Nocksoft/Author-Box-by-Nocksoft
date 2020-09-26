@@ -31,8 +31,8 @@ msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
 #: settings-user.php:12
-msgid "Here you can make further settings for your avatar. However, you will get the best results if the image has the same width and height dimensions."
-msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar vornehmen. Jedoch erh&auml;ltst du das beste Ergebnis, wenn die Ma&szlig;e von H&ouml;he und Breite gleich sind."
+msgid "Here you can make further settings for your avatar. However, you will get the best results if your profile picture has the same width and height dimensions."
+msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar vornehmen. Jedoch erh&auml;ltst du das beste Ergebnis, wenn dein Profilbild die gleiche H&ouml;he und Breite aufweist."
 
 #: settings-user.php:16
 msgid "Local avatars"

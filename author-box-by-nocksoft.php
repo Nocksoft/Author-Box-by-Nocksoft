@@ -14,37 +14,37 @@
 
 
 /* --- Settings link in plugin overview --- */
-add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'nstab_pluginsettingslink');
+add_filter("plugin_action_links_" . plugin_basename(__FILE__), "nstab_pluginsettingslink");
 function nstab_pluginsettingslink($links) {
-    $settingslink = '<a href="options-general.php?page=nstab">' . __('Settings', 'author-box-by-nocksoft') . '</a>';
+    $settingslink = "<a href='options-general.php?page=nstab'>" . __("Settings", "author-box-by-nocksoft") . "</a>";
     array_unshift($links, $settingslink);
     return $links;
 }
 
 
 /* --- Load scripts --- */
-require_once plugin_dir_path(__FILE__) . '/php/setup.php';
-require_once plugin_dir_path(__FILE__) . '/php/avatars.php';
-require_once plugin_dir_path(__FILE__) . '/php/authorbox.php';
-require_once plugin_dir_path(__FILE__) . '/php/settings-global.php';
-require_once plugin_dir_path(__FILE__) . '/php/settings-user.php';
+require_once plugin_dir_path(__FILE__) . "/php/setup.php";
+require_once plugin_dir_path(__FILE__) . "/php/avatars.php";
+require_once plugin_dir_path(__FILE__) . "/php/authorbox.php";
+require_once plugin_dir_path(__FILE__) . "/php/settings-global.php";
+require_once plugin_dir_path(__FILE__) . "/php/settings-user.php";
 
 
 /* --- Plugin setup --- */
-register_activation_hook(__FILE__, 'nstab_activate_plugin');
-register_uninstall_hook(__FILE__, 'nstab_uninstall_plugin');
+register_activation_hook(__FILE__, "nstab_activate_plugin");
+register_uninstall_hook(__FILE__, "nstab_uninstall_plugin");
 
 
 /* --- Load styles --- */
-wp_register_style('author-box-by-nocksoft-style', plugin_dir_url(__FILE__) . 'assets/style.css');
-wp_enqueue_style('author-box-by-nocksoft-style');
+wp_register_style("author-box-by-nocksoft-style", plugin_dir_url(__FILE__) . "assets/style.css");
+wp_enqueue_style("author-box-by-nocksoft-style");
 
 
 /* --- Languages --- */
 function nstab_load_plugin_textdomain() {
-    load_plugin_textdomain('author-box-by-nocksoft', FALSE, basename(dirname(__FILE__)) . '/languages/');
+    load_plugin_textdomain("author-box-by-nocksoft", FALSE, basename(dirname(__FILE__)) . "/languages/");
 }
-add_action('plugins_loaded', 'nstab_load_plugin_textdomain');
+add_action("plugins_loaded", "nstab_load_plugin_textdomain");
 
 
 ?>

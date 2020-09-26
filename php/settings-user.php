@@ -9,7 +9,7 @@ function nstab_usersettings($user) {
     ?>
     <h3>Author Box by Nocksoft</h3>
 
-    <p><?php echo __("Here you can make further settings for your avatar. However, you will get the best results if the image has the same width and height dimensions.", "author-box-by-nocksoft"); ?></p>
+    <p><?php echo __("Here you can make further settings for your avatar. However, you will get the best results if your profile picture has the same width and height dimensions.", "author-box-by-nocksoft"); ?></p>
 
     <table class="form-table">
         <tr>

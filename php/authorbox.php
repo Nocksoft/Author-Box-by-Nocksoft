@@ -5,11 +5,11 @@
 add_filter("the_content", "nstab_add_authorbox");
 function nstab_add_authorbox($content) {
     if (get_option("nstab_setting_dontdisplayauthorbox") == false && is_single()) {
-        $avatarsize = esc_attr(get_option('nstab_setting_avatarsize'));
+        $avatarsize = esc_attr(get_option("nstab_setting_avatarsize"));
         
-        require_once plugin_dir_path(__FILE__) . 'settings-defaults.php';
+        require_once plugin_dir_path(__FILE__) . "settings-defaults.php";
 
-        $authorurl = get_the_author_meta('user_url');
+        $authorurl = get_the_author_meta("user_url");
         if ($authorurl != null && $authorurl != "") {
             $authorurl = "<p id='nstab_homepage'><a href='".$authorurl."'>".$authorurl."</a></p>";
         }
