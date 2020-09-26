@@ -14,6 +14,10 @@
     background-size: cover;
 }
 
+#author-box-by-nocksoft #nstab_wrapper #nstab_authoravatar.nstab_circle {
+    border-radius: 50%;
+}
+
 #author-box-by-nocksoft #nstab_wrapper #nstab_authorbio {
     padding: 0 0 0 0.5em;
 }

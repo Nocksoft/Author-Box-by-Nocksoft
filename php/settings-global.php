@@ -17,6 +17,7 @@ add_action("admin_init", function() {
 	register_setting("nstab_settings", "nstab_setting_avatarsize");
     register_setting("nstab_settings", "nstab_setting_fontsizeheader");
     register_setting("nstab_settings", "nstab_setting_dontdisplayauthorbox");
+    register_setting("nstab_settings", "nstab_setting_circleavatar");
 });
 
 
@@ -50,6 +51,11 @@ function nstab_globalsettings() {
                 <tr valign="top">
                 <th scope="row"><?php echo __("Do not show Author Box (useful if an Author Biography is displayed by a theme or another plugin)", "author-box-by-nocksoft"); ?></th>
                 <td><input type="checkbox" name="nstab_setting_dontdisplayauthorbox" <?php if (get_option("nstab_setting_dontdisplayauthorbox") == true) echo "checked"; ?> /></td>
+                </tr>
+
+                <tr valign="top">
+                <th scope="row"><?php echo __("Use a circle avatar instead of a square", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_circleavatar" <?php if (get_option("nstab_setting_circleavatar") == true) echo "checked"; ?> /></td>
                 </tr>
             </table>
 

@@ -6,27 +6,31 @@ msgstr "F&uuml;gt eine moderne Autoren Box am Ende deines Beitrages ein und impl
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: authorbox.php:25
+#: authorbox.php:29
 msgid "About"
 msgstr "&Uuml;ber"
 
-#: settings-global.php.php:37
+#: settings-global.php.php:38
 msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php.php:41
+#: settings-global.php.php:42
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php.php:46
+#: settings-global.php.php:47
 msgid "Fontsize of Header (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
-#: settings-global.php.php:51
+#: settings-global.php.php:52
 msgid "Do not show Author Box (useful if an Author Biography is displayed by a theme or another plugin)"
 msgstr "Verstecke die Author Box (Sinnvoll, wenn eine Autor-Biographie von einem Theme oder einem anderen Plugin angezeigt wird)"
 
-#: settings-global.php:57
+#: settings-global.php.php:57
+msgid "Use a circle avatar instead of a square"
+msgstr "Verwende ein rundes statt ein eckiges Profilbild"
+
+#: settings-global.php:63
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
