@@ -51,6 +51,7 @@ You can adjust settings in the user profile settings and in the global settings 
 * option added that allows just replace Gravatar through local avatars without displaying Avatar Box
 * positioning of the author box improved
 * positioning of the hyperlink improved
+* setting link to plugin overview page added
 
 = 1.0.0 =
 * first release

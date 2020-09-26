@@ -13,6 +13,15 @@
 */
 
 
+/* --- Settings link in plugin overview --- */
+add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'nstab_pluginsettingslink');
+function nstab_pluginsettingslink($links) {
+    $settingslink = '<a href="options-general.php?page=nstab">' . __('Settings', 'author-box-by-nocksoft') . '</a>';
+    array_unshift($links, $settingslink);
+    return $links;
+}
+
+
 /* --- Load scripts --- */
 require_once plugin_dir_path(__FILE__) . '/php/setup.php';
 require_once plugin_dir_path(__FILE__) . '/php/avatars.php';

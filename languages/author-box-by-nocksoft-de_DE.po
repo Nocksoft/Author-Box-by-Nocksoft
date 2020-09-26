@@ -2,7 +2,11 @@
 msgid "Adds a modern author info box at the end of your posts and implements local avatars as an alternative to Gravatar."
 msgstr "F&uuml;gt eine moderne Autoren Box am Ende deines Beitrages ein und implementiert lokale Avatare als eine Alternative zu Gravatar."
 
-#: authorbox.php:18
+#: author-box-by-nocksoft.php:19
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: authorbox.php:25
 msgid "About"
 msgstr "&Uuml;ber"
 
