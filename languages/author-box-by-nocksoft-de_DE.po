@@ -10,27 +10,31 @@ msgstr "Einstellungen"
 msgid "About"
 msgstr "&Uuml;ber"
 
-#: settings-global.php.php:38
+#: settings-global.php.php:39
 msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php.php:42
+#: settings-global.php.php:43
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php.php:47
+#: settings-global.php.php:48
 msgid "Fontsize of Header (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
-#: settings-global.php.php:52
+#: settings-global.php.php:53
 msgid "Do not show Author Box (useful if an Author Biography is displayed by a theme or another plugin)"
 msgstr "Verstecke die Author Box (Sinnvoll, wenn eine Autor-Biographie von einem Theme oder einem anderen Plugin angezeigt wird)"
 
-#: settings-global.php.php:57
+#: settings-global.php.php:58
 msgid "Use a circle avatar instead of a square"
 msgstr "Verwende ein rundes statt ein eckiges Profilbild"
 
-#: settings-global.php:63
+#: settings-global.php.php:63
+msgid "Hide author box from default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty)"
+msgstr "Verstecke die Author Box vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty)"
+
+#: settings-global.php:69
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 

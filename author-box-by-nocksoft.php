@@ -39,6 +39,11 @@ register_uninstall_hook(__FILE__, "nstab_uninstall_plugin");
 wp_register_style("author-box-by-nocksoft-style", plugin_dir_url(__FILE__) . "assets/style.css");
 wp_enqueue_style("author-box-by-nocksoft-style");
 
+if (get_option("nstab_setting_hidewordpressauthorbox") == true) {
+	wp_register_style("author-box-by-nocksoft-hidewordpressauthorbox", plugin_dir_url(__FILE__) . "assets/hidewordpressauthorbox.css");
+	wp_enqueue_style("author-box-by-nocksoft-hidewordpressauthorbox");
+}
+
 
 /* --- Languages --- */
 function nstab_load_plugin_textdomain() {

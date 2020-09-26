@@ -53,6 +53,7 @@ You can adjust settings in the user profile settings and in the global settings 
 * positioning of the hyperlink improved
 * setting link to plugin overview page added
 * setting for circle avatars added
+* author box from default WordPress theme can now be hidden
 
 = 1.0.0 =
 * first release

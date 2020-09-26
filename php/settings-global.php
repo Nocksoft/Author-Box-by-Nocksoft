@@ -18,6 +18,7 @@ add_action("admin_init", function() {
     register_setting("nstab_settings", "nstab_setting_fontsizeheader");
     register_setting("nstab_settings", "nstab_setting_dontdisplayauthorbox");
     register_setting("nstab_settings", "nstab_setting_circleavatar");
+    register_setting("nstab_settings", "nstab_setting_hidewordpressauthorbox");
 });
 
 
@@ -56,6 +57,11 @@ function nstab_globalsettings() {
                 <tr valign="top">
                 <th scope="row"><?php echo __("Use a circle avatar instead of a square", "author-box-by-nocksoft"); ?></th>
                 <td><input type="checkbox" name="nstab_setting_circleavatar" <?php if (get_option("nstab_setting_circleavatar") == true) echo "checked"; ?> /></td>
+                </tr>
+
+                <tr valign="top">
+                <th scope="row"><?php echo __("Hide author box from default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty)", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_hidewordpressauthorbox" <?php if (get_option("nstab_setting_hidewordpressauthorbox") == true) echo "checked"; ?> /></td>
                 </tr>
             </table>
 
