@@ -19,7 +19,7 @@
 }
 
 #author-box-by-nocksoft #nstab_wrapper #nstab_authorbio {
-    padding: 0 0 0 0.5em;
+    padding: 0 0 0 0.75em;
 }
 
 #author-box-by-nocksoft #nstab_wrapper #nstab_authorbio span {
@@ -30,6 +30,7 @@
 #author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p {
     margin: 0;
     padding-top: 0.5em;
+    line-height: 1.4;
 }
 
 #author-box-by-nocksoft #nstab_homepage {

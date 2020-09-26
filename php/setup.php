@@ -4,8 +4,8 @@ function nstab_activate_plugin() {
     /* Default settings */
     add_option("nstab_setting_avatarsize", "100");
     add_option("nstab_setting_fontsizeheader", "1.1");
-    add_option("nstab_setting_dontdisplayauthorbox", "");
     add_option("nstab_setting_circleavatar", "");
+    add_option("nstab_setting_dontdisplayauthorbox", "");
     add_option("nstab_setting_hidewordpressauthorbox", "");
 }
 
@@ -13,8 +13,8 @@ function nstab_uninstall_plugin() {
     /* Clear global settings */
     delete_option("nstab_setting_avatarsize");
     delete_option("nstab_setting_fontsizeheader");
-    delete_option("nstab_setting_dontdisplayauthorbox");
     delete_option("nstab_setting_circleavatar");
+    delete_option("nstab_setting_dontdisplayauthorbox");
     delete_option("nstab_setting_hidewordpressauthorbox");
 
     /* Clear user settings */

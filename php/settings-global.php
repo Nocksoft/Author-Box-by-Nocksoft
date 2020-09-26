@@ -26,7 +26,7 @@ add_action("admin_init", function() {
 function nstab_globalsettings() {
     if (!current_user_can("manage_options")) return;
 
-    require_once plugin_dir_path(__FILE__) . 'settings-defaults.php';
+    require_once plugin_dir_path(__FILE__) . "settings-defaults.php";
     ?>
     <div class="wrap">
         <h1><?= esc_html(get_admin_page_title()); ?></h1>
@@ -50,13 +50,13 @@ function nstab_globalsettings() {
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Do not show Author Box (useful if an Author Biography is displayed by a theme or another plugin)", "author-box-by-nocksoft"); ?></th>
-                <td><input type="checkbox" name="nstab_setting_dontdisplayauthorbox" <?php if (get_option("nstab_setting_dontdisplayauthorbox") == true) echo "checked"; ?> /></td>
+                <th scope="row"><?php echo __("Use a circle avatar instead of a square", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_circleavatar" <?php if (get_option("nstab_setting_circleavatar") == true) echo "checked"; ?> /></td>
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Use a circle avatar instead of a square", "author-box-by-nocksoft"); ?></th>
-                <td><input type="checkbox" name="nstab_setting_circleavatar" <?php if (get_option("nstab_setting_circleavatar") == true) echo "checked"; ?> /></td>
+                <th scope="row"><?php echo __("Do not show Author Box (useful if an Author Biography or Author Box is displayed by a theme or another plugin)", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_dontdisplayauthorbox" <?php if (get_option("nstab_setting_dontdisplayauthorbox") == true) echo "checked"; ?> /></td>
                 </tr>
 
                 <tr valign="top">

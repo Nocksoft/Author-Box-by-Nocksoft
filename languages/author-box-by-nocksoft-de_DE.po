@@ -23,12 +23,12 @@ msgid "Fontsize of Header (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
 #: settings-global.php.php:53
-msgid "Do not show Author Box (useful if an Author Biography is displayed by a theme or another plugin)"
-msgstr "Verstecke die Author Box (Sinnvoll, wenn eine Autor-Biographie von einem Theme oder einem anderen Plugin angezeigt wird)"
-
-#: settings-global.php.php:58
 msgid "Use a circle avatar instead of a square"
 msgstr "Verwende ein rundes statt ein eckiges Profilbild"
+
+#: settings-global.php.php:58
+msgid "Do not show Author Box (useful if an Author Biography or Author Box is displayed by a theme or another plugin)"
+msgstr "Verstecke die Author Box (Sinnvoll, wenn eine Autor-Biographie oder Author Box von einem Theme oder einem anderen Plugin verwendet werden soll)"
 
 #: settings-global.php.php:63
 msgid "Hide author box from default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty)"
