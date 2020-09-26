@@ -2,7 +2,7 @@
 
 /*
 	Plugin Name: Author Box by Nocksoft
-	Version: 1.0.0
+	Version: 1.0.1
 	Author: Rafael Nockmann @ Nocksoft
 	Author URI: https://nocksoft.de
 	Description: Adds a modern author info box at the end of your posts and implements local avatars as an alternative to Gravatar.
