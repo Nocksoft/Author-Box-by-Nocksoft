@@ -50,6 +50,7 @@ You can adjust settings in the user profile settings and in the global settings 
 * font size of the headline can now be adjusted
 * option added that allows just replace Gravatar through local avatars without displaying Avatar Box
 * positioning of the author box improved
+* positioning of the hyperlink improved
 
 = 1.0.0 =
 * first release

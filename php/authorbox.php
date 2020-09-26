@@ -10,6 +10,13 @@ function nstab_add_authorbox($content) {
         require_once plugin_dir_path(__FILE__) . 'settings-defaults.php';
 
         $authorurl = get_the_author_meta('user_url');
+        if ($authorurl != null && $authorurl != "") {
+            $authorurl = "<p id='nstab_homepage'><a href='".$authorurl."'>".$authorurl."</a></p>";
+        }
+        else {
+            $authorurl = "";
+        }
+
         $content .= "
             <div id='author-box-by-nocksoft'>
                 <div id='nstab_wrapper'>
@@ -17,15 +24,10 @@ function nstab_add_authorbox($content) {
                     <div id='nstab_authorbio' style='height: ".$avatarsize."px;'>
                         <span style='font-size: ".$fontsizeheader."em;'>".__("About", "author-box-by-nocksoft")." ".get_the_author_meta('display_name')."</span>
                         <p>".get_the_author_meta('description')."</p>
+                        ".$authorurl."
                     </div>
                 </div>
         ";
-
-        if ($authorurl != null && $authorurl != "") {
-            $content .= "
-                    <div id='nstab_homepage'><a href='".$authorurl."'>".$authorurl."</a></div>
-            ";
-        }
 
         $content .= "
                 </div>
