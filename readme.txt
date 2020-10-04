@@ -50,6 +50,9 @@ You have two options. Either you choose the setting that this plugins author box
 
 == Changelog ==
 
+= 1.x.x =
+* headline can now be adjusted
+
 = 1.0.1 =
 * font size of the headline can now be adjusted
 * option added that allows just replace Gravatar through local avatars without displaying Avatar Box
