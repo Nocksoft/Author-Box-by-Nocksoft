@@ -28,6 +28,17 @@ function nstab_usersettings($user) {
                 <span class="description"><?php echo __("Please enter a valid URL to your avatar.", "author-box-by-nocksoft"); ?></span>
             </td>
         </tr>
+
+        <tr>
+            <th><label for="nstab_setting_homepage_linkurl"><?php echo __("Homepage / About Me Page", "author-box-by-nocksoft"); ?></label></th>
+            <td>
+                <?php $linktext = get_the_author_meta("nstab_setting_homepage_linktext", $user->ID); ?>
+                <?php $linkurl = get_the_author_meta("nstab_setting_homepage_linkurl", $user->ID); ?>
+                <input type="text" id="nstab_setting_homepage_linktext" name="nstab_setting_homepage_linktext" class="regular-text" placeholder="<?php echo __("Link Text (e.g. Homepage)", "author-box-by-nocksoft"); ?>" value="<?php echo $linktext; ?>" />
+                <input type="text" id="nstab_setting_homepage_linkurl" name="nstab_setting_homepage_linkurl" class="regular-text" placeholder="<?php echo __("Link URL (e.g. https://yoursite.com)", "author-box-by-nocksoft"); ?>" value="<?php echo $linkurl; ?>" />
+                <p class="description"><?php echo __("This URL will be displayed below your biography in the Author Box.", "author-box-by-nocksoft"); ?></p>
+            </td>
+        </tr>
     </table>
     <?php
 }
@@ -44,6 +55,8 @@ function nstab_save_usersettings($user_id) {
     else {
         update_usermeta($user_id, "nstab_setting_localavatar", $_POST["nstab_setting_localavatar"]);
         update_usermeta($user_id, "nstab_setting_avatarurl", trim($_POST["nstab_setting_avatarurl"]));
+        update_usermeta($user_id, "nstab_setting_homepage_linktext", trim($_POST["nstab_setting_homepage_linktext"]));
+        update_usermeta($user_id, "nstab_setting_homepage_linkurl", trim($_POST["nstab_setting_homepage_linkurl"]));
     }
 }
 

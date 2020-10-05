@@ -57,3 +57,19 @@ msgstr "Verwende lokale Avatare an Stelle von Gravatar"
 #: settings-user.php:28
 msgid "Please enter a valid URL to your avatar."
 msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an."
+
+#: settings-user.php:33
+msgid "Homepage / About Me Page"
+msgstr "Homepage / Über Mich Seite"
+
+#: settings-user.php:37
+msgid "Link Text (e.g. Homepage)"
+msgstr "Link Text (z.B. Homepage)"
+
+#: settings-user.php:38
+msgid "Link URL (e.g. https://yoursite.com)"
+msgstr "Link URL (z.B. https://deineseite.de)"
+
+#: settings-user.php:39
+msgid "This URL will be displayed below your biography in the Author Box."
+msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."
