@@ -10,43 +10,51 @@ msgstr "Einstellungen"
 msgid "A Post by"
 msgstr "Ein Beitrag von"
 
-#: settings-global.php.php:42
+#: settings-global.php:43
 msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php.php:46
+#: settings-global.php:47
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php.php:51
+#: settings-global.php:52
 msgid "Use a circle avatar instead of a square"
 msgstr "Verwende ein rundes statt ein eckiges Profilbild"
 
-#: settings-global.php.php:56
+#: settings-global.php:57
 msgid "Headline"
 msgstr "Text der &Uuml;berschrift"
 
-#: settings-global.php.php:61
+#: settings-global.php:58
+msgid "e.g. A Post by"
+msgstr "z.B. Ein Beitrag von"
+
+#: settings-global.php:62
 msgid "Fontsize of Header (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
-#: settings-global.php.php:66
+#: settings-global.php:67
 msgid "Fontsize of Biography (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Biografie (em)"
 
-#: settings-global.php.php:71
+#: settings-global.php:72
 msgid "Fontsize of Links (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Links (em)"
 
-#: settings-global.php.php:76
+#: settings-global.php:77
+msgid "Display a link to the author's archive"
+msgstr "Zeige einen Link zum Archiv des Autors an"
+
+#: settings-global.php:82
 msgid "Do not show Author Box (useful if an Author Biography or Author Box is displayed by a theme or another plugin)"
 msgstr "Verstecke die Author Box (Sinnvoll, wenn eine Autor-Biographie oder Author Box von einem Theme oder einem anderen Plugin verwendet werden soll)"
 
-#: settings-global.php.php:81
+#: settings-global.php:87
 msgid "Hide author box from default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty)"
 msgstr "Verstecke die Author Box vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty)"
 
-#: settings-global.php:87
+#: settings-global.php:93
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
@@ -89,3 +97,11 @@ msgstr "Link URL (z.B. https://deineseite.de)"
 #: settings-user.php:39
 msgid "This URL will be displayed below your biography in the Author Box."
 msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."
+
+#: authorbox.php:21
+msgid "View Archive"
+msgstr "Archiv anzeigen"
+
+#: authorbox.php:28
+msgid "View Archive"
+msgstr "Archiv anzeigen"
