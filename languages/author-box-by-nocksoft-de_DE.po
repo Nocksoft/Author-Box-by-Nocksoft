@@ -51,12 +51,20 @@ msgid "Local avatars"
 msgstr "Lokale Avatare"
 
 #: settings-user.php:19
-msgid "Use local avatars instead of Gravatar"
-msgstr "Verwende lokale Avatare an Stelle von Gravatar"
+msgid "Use local avatars instead of Gravatar (Enter the URL to your avatar in the input field below)"
+msgstr "Verwende lokale Avatare an Stelle von Gravatar (Trage die URL zu deinem Profilbild in das untere Eingabefeld ein)"
+
+#: settings-user.php:24
+msgid "Avatar (URL)"
+msgstr "Avatar (URL)"
+
+#: settings-user.php:27
+msgid "Avatar URL (e.g. https://yoursite.com/avatar.jpg)"
+msgstr "Avatar URL (e.g. https://deineseite.de/avatar.jpg)"
 
 #: settings-user.php:28
-msgid "Please enter a valid URL to your avatar."
-msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an."
+msgid "Please enter a valid URL to your avatar, so that it can be displayed in the author box."
+msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an, damit dieses in der Author Box angezeigt werden kann."
 
 #: settings-user.php:33
 msgid "Homepage / About Me Page"

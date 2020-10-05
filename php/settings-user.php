@@ -16,16 +16,16 @@ function nstab_usersettings($user) {
             <th><label for="nstab_setting_localavatar"><?php echo __("Local avatars", "author-box-by-nocksoft"); ?></label></th>
             <td>
                 <input type="checkbox" id="nstab_setting_localavatar" name="nstab_setting_localavatar" <?php if (get_the_author_meta("nstab_setting_localavatar", $user->ID) == "on") echo "checked"; ?>>
-                <label for="nstab_setting_localavatar"><?php echo __("Use local avatars instead of Gravatar", "author-box-by-nocksoft"); ?></label>
+                <label for="nstab_setting_localavatar"><?php echo __("Use local avatars instead of Gravatar (Enter the URL to your avatar in the input field below)", "author-box-by-nocksoft"); ?></label>
             </td>
         </tr>
 
         <tr>
-            <th><label for="nstab_setting_avatarurl">Avatar (URL)</label></th>
+            <th><label for="nstab_setting_avatarurl"><?php echo __("Avatar (URL)", "author-box-by-nocksoft"); ?></label></th>
             <td>
                 <?php $avatarurl = get_the_author_meta("nstab_setting_avatarurl", $user->ID); ?>
-                <input type="text" id="nstab_setting_avatarurl" name="nstab_setting_avatarurl" class="regular-text" value="<?php echo $avatarurl; ?>" />
-                <span class="description"><?php echo __("Please enter a valid URL to your avatar.", "author-box-by-nocksoft"); ?></span>
+                <input type="text" id="nstab_setting_avatarurl" name="nstab_setting_avatarurl" class="regular-text" placeholder="<?php echo __("Avatar URL (e.g. https://yoursite.com/avatar.jpg)", "author-box-by-nocksoft"); ?>" value="<?php echo $avatarurl; ?>" />
+                <p class="description"><?php echo __("Please enter a valid URL to your avatar, so that it can be displayed in the author box.", "author-box-by-nocksoft"); ?></p>
             </td>
         </tr>
 

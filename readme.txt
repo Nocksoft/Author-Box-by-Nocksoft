@@ -53,6 +53,7 @@ You have two options. Either you choose the setting that this plugins author box
 = 1.x.x =
 * headline can now be adjusted
 * users can now add their custom URL including link text for the Author Box footer
+* improved descriptions and translations
 
 = 1.0.1 =
 * font size of the headline can now be adjusted
