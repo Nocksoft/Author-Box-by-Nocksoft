@@ -56,6 +56,7 @@ You have two options. Either you choose the setting that this plugins author box
 * improved descriptions and translations
 * font size of the biography and the links can now be adjusted
 * option added to show a link to author's archive
+* set Arial as default font
 
 = 1.0.1 =
 * font size of the headline can now be adjusted
