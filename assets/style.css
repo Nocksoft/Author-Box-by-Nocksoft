@@ -30,11 +30,13 @@
 #author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p {
     margin: 0;
     padding-top: 0.5em;
+}
+
+#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p#nstab_description {
     line-height: 1.4;
 }
 
-#author-box-by-nocksoft #nstab_homepage {
+#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p#nstab_links {
     padding-top: 0.5em;
-    font-size: 0.9em;
     font-style: italic;
 }

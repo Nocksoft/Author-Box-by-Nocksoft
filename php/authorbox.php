@@ -16,7 +16,7 @@ function nstab_add_authorbox($content) {
         $authorlinktext = get_the_author_meta("nstab_setting_homepage_linktext");
         $authorlinkurl = get_the_author_meta("nstab_setting_homepage_linkurl");
         if ($authorlinktext != null && $authorlinkurl != null) {
-            $homepagehref = "<p id='nstab_homepage'><a href='".$authorlinkurl."'>".$authorlinktext."</a></p>";
+            $homepagehref = "<p id='nstab_links' style='font-size: " . $fontsizelinks . "em;'><a href='" . $authorlinkurl . "'>" . $authorlinktext . "</a></p>";
         }
         else {
             $homepagehref = "";
@@ -28,7 +28,7 @@ function nstab_add_authorbox($content) {
                     <div id='nstab_authoravatar' " . $circleavatar . " style='background-image: url(\"".nstab_get_avatarurl()."\"); height: ".$avatarsize."px; width: ".$avatarsize."px;'></div>
                     <div id='nstab_authorbio' style='height: ".$avatarsize."px;'>
                         <span style='font-size: " . $fontsizeheader . "em;'>" . get_option("nstab_setting_headline") . " " . get_the_author_meta('display_name') . "</span>
-                        <p>".get_the_author_meta('description')."</p>
+                        <p id='nstab_description' style='font-size: " . $fontsizebio . "em;'>".get_the_author_meta('description')."</p>
                         " . $homepagehref . "
                     </div>
                 </div>

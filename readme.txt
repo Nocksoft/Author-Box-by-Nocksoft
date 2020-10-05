@@ -54,6 +54,7 @@ You have two options. Either you choose the setting that this plugins author box
 * headline can now be adjusted
 * users can now add their custom URL including link text for the Author Box footer
 * improved descriptions and translations
+* font size of the biography and the links can now be adjusted
 
 = 1.0.1 =
 * font size of the headline can now be adjusted

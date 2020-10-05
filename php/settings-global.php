@@ -16,8 +16,10 @@ add_action("admin_menu", "nstab_settings_page");
 add_action("admin_init", function() {
     register_setting("nstab_settings", "nstab_setting_avatarsize");
     register_setting("nstab_settings", "nstab_setting_circleavatar");
-    register_setting("nstab_settings", "nstab_setting_fontsizeheader");
     register_setting("nstab_settings", "nstab_setting_headline");
+    register_setting("nstab_settings", "nstab_setting_fontsizeheader");
+    register_setting("nstab_settings", "nstab_setting_fontsizebio");
+    register_setting("nstab_settings", "nstab_setting_fontsizelinks");
     register_setting("nstab_settings", "nstab_setting_dontdisplayauthorbox");
     register_setting("nstab_settings", "nstab_setting_hidewordpressauthorbox");
 });
@@ -51,13 +53,23 @@ function nstab_globalsettings() {
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Fontsize of Header (em)", "author-box-by-nocksoft"); ?></th>
-                <td><input type="number" name="nstab_setting_fontsizeheader" min="0.3" max="3" step="0.1" value="<?php echo $fontsizeheader; ?>" /></td>
+                <th scope="row"><?php echo __("Headline", "author-box-by-nocksoft"); ?></th>
+                <td><input type="text" name="nstab_setting_headline" min="0.3" max="3" step="0.1" value="<?php echo get_option("nstab_setting_headline"); ?>" /></td>
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Headline", "author-box-by-nocksoft"); ?></th>
-                <td><input type="text" name="nstab_setting_headline" min="0.3" max="3" step="0.1" value="<?php echo get_option("nstab_setting_headline"); ?>" /></td>
+                <th scope="row"><?php echo __("Fontsize of Header (em)", "author-box-by-nocksoft"); ?></th>
+                <td><input type="number" name="nstab_setting_fontsizeheader" min="0.5" max="2" step="0.1" value="<?php echo $fontsizeheader; ?>" /></td>
+                </tr>
+
+                <tr valign="top">
+                <th scope="row"><?php echo __("Fontsize of Biography (em)", "author-box-by-nocksoft"); ?></th>
+                <td><input type="number" name="nstab_setting_fontsizebio" min="0.4" max="1.5" step="0.1" value="<?php echo $fontsizebio; ?>" /></td>
+                </tr>
+
+                <tr valign="top">
+                <th scope="row"><?php echo __("Fontsize of Links (em)", "author-box-by-nocksoft"); ?></th>
+                <td><input type="number" name="nstab_setting_fontsizelinks" min="0.3" max="1" step="0.1" value="<?php echo $fontsizelinks; ?>" /></td>
                 </tr>
 
                 <tr valign="top">
