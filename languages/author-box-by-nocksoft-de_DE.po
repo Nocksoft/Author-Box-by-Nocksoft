@@ -51,8 +51,8 @@ msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
 #: settings-user.php:12
-msgid "Here you can make further settings for your avatar. However, you will get the best results if your profile picture has the same width and height dimensions."
-msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar vornehmen. Jedoch erh&auml;ltst du das beste Ergebnis, wenn dein Profilbild die gleiche H&ouml;he und Breite aufweist."
+msgid "Here you can make further settings for your avatar or other personal settings. The WordPress administrator can adjust global settings under Settings -> Author Box."
+msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar oder weiteren pers&ouml;nlichen Einstellungen vornehmen. Globale Einstellungen kann der WordPress-Administrator unter Einstellungen -> Author Box vornehmen."
 
 #: settings-user.php:16
 msgid "Local avatars"
@@ -68,19 +68,19 @@ msgstr "Avatar (URL)"
 
 #: settings-user.php:27
 msgid "Avatar URL (e.g. https://yoursite.com/avatar.jpg)"
-msgstr "Avatar URL (e.g. https://deineseite.de/avatar.jpg)"
+msgstr "Avatar URL (z.B. https://deineseite.de/avatar.jpg)"
 
 #: settings-user.php:28
-msgid "Please enter a valid URL to your avatar, so that it can be displayed in the author box."
-msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an, damit dieses in der Author Box angezeigt werden kann."
+msgid "Please enter a valid URL to your avatar, so that it can be displayed in the author box. You will get the best results if your avatar has the same width and height dimensions."
+msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an, damit dieses in der Author Box angezeigt werden kann. Das beste Ergebnis erh&auml;ltst du, wenn dein Profilbild die gleiche H&ouml;he und Breite aufweist."
 
 #: settings-user.php:33
 msgid "Homepage / About Me Page"
-msgstr "Homepage / Über Mich Seite"
+msgstr "Homepage / &Uuml;ber Mich Seite"
 
 #: settings-user.php:37
-msgid "Link Text (e.g. Homepage)"
-msgstr "Link Text (z.B. Homepage)"
+msgid "Link Text (e.g. Homepage or About Me)"
+msgstr "Link Text (z.B. Homepage oder &Uuml;ber mich)"
 
 #: settings-user.php:38
 msgid "Link URL (e.g. https://yoursite.com)"

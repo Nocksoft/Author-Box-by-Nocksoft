@@ -9,7 +9,7 @@ function nstab_usersettings($user) {
     ?>
     <h3>Author Box by Nocksoft</h3>
 
-    <p><?php echo __("Here you can make further settings for your avatar. However, you will get the best results if your profile picture has the same width and height dimensions.", "author-box-by-nocksoft"); ?></p>
+    <p><?php echo __("Here you can make further settings for your avatar or other personal settings. The WordPress administrator can adjust global settings under Settings -> Author Box.", "author-box-by-nocksoft"); ?></p>
 
     <table class="form-table">
         <tr>
@@ -25,7 +25,7 @@ function nstab_usersettings($user) {
             <td>
                 <?php $avatarurl = get_the_author_meta("nstab_setting_avatarurl", $user->ID); ?>
                 <input type="text" id="nstab_setting_avatarurl" name="nstab_setting_avatarurl" class="regular-text" placeholder="<?php echo __("Avatar URL (e.g. https://yoursite.com/avatar.jpg)", "author-box-by-nocksoft"); ?>" value="<?php echo $avatarurl; ?>" />
-                <p class="description"><?php echo __("Please enter a valid URL to your avatar, so that it can be displayed in the author box.", "author-box-by-nocksoft"); ?></p>
+                <p class="description"><?php echo __("Please enter a valid URL to your avatar, so that it can be displayed in the author box. You will get the best results if your avatar has the same width and height dimensions.", "author-box-by-nocksoft"); ?></p>
             </td>
         </tr>
 
@@ -34,7 +34,7 @@ function nstab_usersettings($user) {
             <td>
                 <?php $linktext = get_the_author_meta("nstab_setting_homepage_linktext", $user->ID); ?>
                 <?php $linkurl = get_the_author_meta("nstab_setting_homepage_linkurl", $user->ID); ?>
-                <input type="text" id="nstab_setting_homepage_linktext" name="nstab_setting_homepage_linktext" class="regular-text" placeholder="<?php echo __("Link Text (e.g. Homepage)", "author-box-by-nocksoft"); ?>" value="<?php echo $linktext; ?>" />
+                <input type="text" id="nstab_setting_homepage_linktext" name="nstab_setting_homepage_linktext" class="regular-text" placeholder="<?php echo __("Link Text (e.g. Homepage or About Me)", "author-box-by-nocksoft"); ?>" value="<?php echo $linktext; ?>" />
                 <input type="text" id="nstab_setting_homepage_linkurl" name="nstab_setting_homepage_linkurl" class="regular-text" placeholder="<?php echo __("Link URL (e.g. https://yoursite.com)", "author-box-by-nocksoft"); ?>" value="<?php echo $linkurl; ?>" />
                 <p class="description"><?php echo __("This URL will be displayed below your biography in the Author Box.", "author-box-by-nocksoft"); ?></p>
             </td>
