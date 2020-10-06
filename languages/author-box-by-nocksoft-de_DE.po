@@ -10,51 +10,55 @@ msgstr "Einstellungen"
 msgid "A Post by"
 msgstr "Ein Beitrag von"
 
-#: settings-global.php:43
+#: settings-global.php:44
 msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php:47
+#: settings-global.php:48
+msgid "Show Border of Author Box"
+msgstr "Stelle den Rand der Author Box dar"
+
+#: settings-global.php:53
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php:52
+#: settings-global.php:58
 msgid "Use a circle avatar instead of a square"
 msgstr "Verwende ein rundes statt ein eckiges Profilbild"
 
-#: settings-global.php:57
+#: settings-global.php:63
 msgid "Headline"
 msgstr "Text der &Uuml;berschrift"
 
-#: settings-global.php:58
+#: settings-global.php:64
 msgid "e.g. A Post by"
 msgstr "z.B. Ein Beitrag von"
 
-#: settings-global.php:62
+#: settings-global.php:68
 msgid "Fontsize of Header (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
-#: settings-global.php:67
+#: settings-global.php:73
 msgid "Fontsize of Biography (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Biografie (em)"
 
-#: settings-global.php:72
+#: settings-global.php:78
 msgid "Fontsize of Links (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Links (em)"
 
-#: settings-global.php:77
+#: settings-global.php:83
 msgid "Display a link to the author's archive"
 msgstr "Zeige einen Link zum Archiv des Autors an"
 
-#: settings-global.php:82
+#: settings-global.php:88
 msgid "Do not show Author Box (useful if an Author Biography or Author Box is displayed by a theme or another plugin)"
 msgstr "Verstecke die Author Box (Sinnvoll, wenn eine Autor-Biographie oder Author Box von einem Theme oder einem anderen Plugin verwendet werden soll)"
 
-#: settings-global.php:87
+#: settings-global.php:93
 msgid "Hide author box from default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty)"
 msgstr "Verstecke die Author Box vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty)"
 
-#: settings-global.php:93
+#: settings-global.php:99
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 

@@ -14,6 +14,7 @@ add_action("admin_menu", "nstab_settings_page");
 
 
 add_action("admin_init", function() {
+    register_setting("nstab_settings", "nstab_setting_showborder");
     register_setting("nstab_settings", "nstab_setting_avatarsize");
     register_setting("nstab_settings", "nstab_setting_circleavatar");
     register_setting("nstab_settings", "nstab_setting_headline");
@@ -43,6 +44,11 @@ function nstab_globalsettings() {
             <p><?php echo __("User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here.", "author-box-by-nocksoft"); ?></p>
 
             <table class="form-table">
+            <tr valign="top">
+                <th scope="row"><?php echo __("Show Border of Author Box", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_showborder" <?php if (get_option("nstab_setting_showborder", true) == true) echo "checked"; ?> /></td>
+                </tr>
+
                 <tr valign="top">
                 <th scope="row"><?php echo __("Size of Avatar (Pixel)", "author-box-by-nocksoft"); ?></th>
                 <td><input type="number" name="nstab_setting_avatarsize" min="96" max="200" value="<?php echo esc_attr(get_option("nstab_setting_avatarsize")); ?>" /></td>

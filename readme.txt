@@ -57,6 +57,7 @@ You have two options. Either you choose the setting that this plugins author box
 * font size of the biography and the links can now be adjusted
 * option added to show a link to author's archive
 * set Arial as default font
+* border of Author Box can now be hidden
 
 = 1.0.1 =
 * font size of the headline can now be adjusted

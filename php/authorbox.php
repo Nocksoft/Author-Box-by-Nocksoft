@@ -29,8 +29,11 @@ function nstab_add_authorbox($content) {
             }
         }
 
-        $content .= "
-            <div id='author-box-by-nocksoft'>
+        $authorboxcontainer = "<div id='author-box-by-nocksoft'>";
+        if (get_option("nstab_setting_showborder", true) == true) {
+            $authorboxcontainer = "<div id='author-box-by-nocksoft' style='padding: 0.75em; border: 1px solid #EEEEEE;'>";
+        }
+        $content .= $authorboxcontainer .= "
                 <div id='nstab_wrapper'>
                     <div id='nstab_authoravatar' " . $circleavatar . " style='background-image: url(\"".nstab_get_avatarurl()."\"); height: ".$avatarsize."px; width: ".$avatarsize."px;'></div>
                     <div id='nstab_authorbio' style='height: ".$avatarsize."px;'>
@@ -39,11 +42,8 @@ function nstab_add_authorbox($content) {
                         " . $homepagehref . "
                     </div>
                 </div>
+            </div>
         ";
-
-        $content .= "
-                </div>
-            ";
     }
     return $content;
 }

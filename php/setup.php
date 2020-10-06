@@ -2,6 +2,7 @@
 
 function nstab_activate_plugin() {
     /* Default settings */
+    add_option("nstab_setting_showborder", "on");
     add_option("nstab_setting_avatarsize", "100");
     add_option("nstab_setting_circleavatar", "");
     add_option("nstab_setting_headline", __("A Post by", "author-box-by-nocksoft"));
@@ -15,6 +16,7 @@ function nstab_activate_plugin() {
 
 function nstab_uninstall_plugin() {
     /* Clear global settings */
+    delete_option("nstab_setting_showborder");
     delete_option("nstab_setting_avatarsize");
     delete_option("nstab_setting_circleavatar");
     delete_option("nstab_setting_headline");
