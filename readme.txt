@@ -51,7 +51,7 @@ You have two options. Either you choose the setting that this plugins author box
 
 == Changelog ==
 
-= 1.x.x =
+= 1.0.2 =
 * headline can now be adjusted
 * users can now add their custom URL including link text for the Author Box footer
 * improved descriptions and translations
