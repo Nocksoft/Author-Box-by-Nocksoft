@@ -37,7 +37,10 @@ function nstab_add_authorbox($content) {
                 <div id='nstab_wrapper'>
                     <div id='nstab_authoravatar' " . $circleavatar . " style='background-image: url(\"".nstab_get_avatarurl()."\"); height: ".$avatarsize."px; width: ".$avatarsize."px;'></div>
                     <div id='nstab_authorbio' style='height: ".$avatarsize."px;'>
-                        <span style='font-size: " . $fontsizeheader . "em;'>" . get_option("nstab_setting_headline") . " " . get_the_author_meta("display_name") . "</span>
+                    <div id='header'>
+                        <span id='headline' style='font-size: " . $fontsizeheadline . "em;'>" . get_option("nstab_setting_headline") . " " . get_the_author_meta("display_name") . "</span>
+                        <span id='position' style='font-size: " . $fontsizeposition . "em;'>" . get_the_author_meta("nstab_setting_authorposition") . "</span>
+                    </div>
                         <p id='nstab_description' style='font-size: " . $fontsizebio . "em;'>" . get_the_author_meta("description") . "</p>
                         " . $homepagehref . "
                     </div>

@@ -30,6 +30,15 @@ function nstab_usersettings($user) {
         </tr>
 
         <tr>
+            <th><label for="nstab_setting_authorposition"><?php echo __("Your Position", "author-box-by-nocksoft"); ?></label></th>
+            <td>
+                <?php $authorposition = get_the_author_meta("nstab_setting_authorposition", $user->ID); ?>
+                <input type="text" id="nstab_setting_authorposition" name="nstab_setting_authorposition" class="regular-text" placeholder="<?php echo __("Position (e.g. Founder or Author of YourSite)", "author-box-by-nocksoft"); ?>" value="<?php echo $authorposition; ?>" />
+                <p class="description"><?php echo __("Here you can enter your position. The position is shown below your name in the Author Box.", "author-box-by-nocksoft"); ?></p>
+            </td>
+        </tr>
+
+        <tr>
             <th><label for="nstab_setting_homepage_linkurl"><?php echo __("Homepage / About Me Page", "author-box-by-nocksoft"); ?></label></th>
             <td>
                 <?php $linktext = get_the_author_meta("nstab_setting_homepage_linktext", $user->ID); ?>
@@ -55,6 +64,7 @@ function nstab_save_usersettings($user_id) {
     else {
         update_usermeta($user_id, "nstab_setting_localavatar", $_POST["nstab_setting_localavatar"]);
         update_usermeta($user_id, "nstab_setting_avatarurl", trim($_POST["nstab_setting_avatarurl"]));
+        update_usermeta($user_id, "nstab_setting_authorposition", trim($_POST["nstab_setting_authorposition"]));
         update_usermeta($user_id, "nstab_setting_homepage_linktext", trim($_POST["nstab_setting_homepage_linktext"]));
         update_usermeta($user_id, "nstab_setting_homepage_linkurl", trim($_POST["nstab_setting_homepage_linkurl"]));
     }

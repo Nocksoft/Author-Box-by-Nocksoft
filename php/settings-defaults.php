@@ -2,9 +2,13 @@
 
 /* --- Default settings and fallbacks. Only needed, when setting was added after initial release. --- */
 
-/* Header Size */
-if (esc_attr(get_option("nstab_setting_fontsizeheader")) != false) $fontsizeheader = esc_attr(get_option("nstab_setting_fontsizeheader"));
-else $fontsizeheader = "1.1";
+/* Headline Size */
+if (esc_attr(get_option("nstab_setting_fontsizeheadline")) != false) $fontsizeheadline = esc_attr(get_option("nstab_setting_fontsizeheadline"));
+else $fontsizeheadline = "1.1";
+
+/* Position Size */
+if (esc_attr(get_option("nstab_setting_fontsizeposition")) != false) $fontsizeposition = esc_attr(get_option("nstab_setting_fontsizeposition"));
+else $fontsizeposition = "0.7";
 
 /* Bio Size */
 if (esc_attr(get_option("nstab_setting_fontsizebio")) != false) $fontsizebio = esc_attr(get_option("nstab_setting_fontsizebio"));

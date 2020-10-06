@@ -21,9 +21,19 @@
     font-family: "Arial";
 }
 
-#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio span {
+#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio #header {
+    line-height: 1em;
+    padding: 0.4em 0 0.35em 0;
+}
+
+#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio #header span#headline {
     font-weight: bold;
     display: block;
+}
+
+#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio #header span#position {
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 #author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p {

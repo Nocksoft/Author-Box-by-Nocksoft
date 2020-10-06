@@ -58,6 +58,7 @@ You have two options. Either you choose the setting that this plugins author box
 * option added to show a link to author's archive
 * set Arial as default font
 * border of Author Box can now be hidden
+* authors can now specify their own position, which is displayed below their name
 
 = 1.0.1 =
 * font size of the headline can now be adjusted

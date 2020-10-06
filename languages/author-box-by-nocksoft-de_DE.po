@@ -10,55 +10,59 @@ msgstr "Einstellungen"
 msgid "A Post by"
 msgstr "Ein Beitrag von"
 
-#: settings-global.php:44
+#: settings-global.php:45
 msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php:48
+#: settings-global.php:49
 msgid "Show Border of Author Box"
 msgstr "Stelle den Rand der Author Box dar"
 
-#: settings-global.php:53
+#: settings-global.php:54
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php:58
+#: settings-global.php:59
 msgid "Use a circle avatar instead of a square"
 msgstr "Verwende ein rundes statt ein eckiges Profilbild"
 
-#: settings-global.php:63
+#: settings-global.php:64
 msgid "Headline"
 msgstr "Text der &Uuml;berschrift"
 
-#: settings-global.php:64
+#: settings-global.php:65
 msgid "e.g. A Post by"
 msgstr "z.B. Ein Beitrag von"
 
-#: settings-global.php:68
-msgid "Fontsize of Header (em)"
+#: settings-global.php:69
+msgid "Fontsize of Headline (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
-#: settings-global.php:73
+#: settings-global.php:74
+msgid "Fontsize of author's Position (em)"
+msgstr "Schriftgr&ouml;&szlig;e der Position vom Autor (em)"
+
+#: settings-global.php:79
 msgid "Fontsize of Biography (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Biografie (em)"
 
-#: settings-global.php:78
+#: settings-global.php:84
 msgid "Fontsize of Links (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Links (em)"
 
-#: settings-global.php:83
+#: settings-global.php:89
 msgid "Display a link to the author's archive"
 msgstr "Zeige einen Link zum Archiv des Autors an"
 
-#: settings-global.php:88
+#: settings-global.php:94
 msgid "Do not show Author Box (useful if an Author Biography or Author Box is displayed by a theme or another plugin)"
 msgstr "Verstecke die Author Box (Sinnvoll, wenn eine Autor-Biographie oder Author Box von einem Theme oder einem anderen Plugin verwendet werden soll)"
 
-#: settings-global.php:93
+#: settings-global.php:99
 msgid "Hide author box from default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty)"
 msgstr "Verstecke die Author Box vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty)"
 
-#: settings-global.php:99
+#: settings-global.php:105
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
@@ -87,18 +91,30 @@ msgid "Please enter a valid URL to your avatar, so that it can be displayed in t
 msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an, damit dieses in der Author Box angezeigt werden kann. Das beste Ergebnis erh&auml;ltst du, wenn dein Profilbild die gleiche H&ouml;he und Breite aufweist."
 
 #: settings-user.php:33
+msgid "Your Position"
+msgstr "Deine Position"
+
+#: settings-user.php:36
+msgid "Position (e.g. Founder or Author of YourSite)"
+msgstr "Position (z.B. Gr&uuml;nder oder Autor von DeineSeite)"
+
+#: settings-user.php:37
+msgid "Here you can enter your position. The position is shown below your name in the Author Box."
+msgstr "Hier kannst du deine Position angeben. Die Position wird unterhalb deines Namens in der Author Box angezeigt."
+
+#: settings-user.php:42
 msgid "Homepage / About Me Page"
 msgstr "Homepage / &Uuml;ber Mich Seite"
 
-#: settings-user.php:37
+#: settings-user.php:46
 msgid "Link Text (e.g. Homepage or About Me)"
 msgstr "Link Text (z.B. Homepage oder &Uuml;ber mich)"
 
-#: settings-user.php:38
+#: settings-user.php:47
 msgid "Link URL (e.g. https://yoursite.com)"
 msgstr "Link URL (z.B. https://deineseite.de)"
 
-#: settings-user.php:39
+#: settings-user.php:48
 msgid "This URL will be displayed below your biography in the Author Box."
 msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."
 

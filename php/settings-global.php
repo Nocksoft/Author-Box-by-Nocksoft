@@ -18,7 +18,8 @@ add_action("admin_init", function() {
     register_setting("nstab_settings", "nstab_setting_avatarsize");
     register_setting("nstab_settings", "nstab_setting_circleavatar");
     register_setting("nstab_settings", "nstab_setting_headline");
-    register_setting("nstab_settings", "nstab_setting_fontsizeheader");
+    register_setting("nstab_settings", "nstab_setting_fontsizeheadline");
+    register_setting("nstab_settings", "nstab_setting_fontsizeposition");
     register_setting("nstab_settings", "nstab_setting_fontsizebio");
     register_setting("nstab_settings", "nstab_setting_fontsizelinks");
     register_setting("nstab_settings", "nstab_setting_displayauthorsarchive");
@@ -61,12 +62,17 @@ function nstab_globalsettings() {
 
                 <tr valign="top">
                 <th scope="row"><?php echo __("Headline", "author-box-by-nocksoft"); ?></th>
-                <td><input type="text" name="nstab_setting_headline" min="0.3" max="3" step="0.1" placeholder="<?php echo __("e.g. A Post by", "author-box-by-nocksoft"); ?>" value="<?php echo get_option("nstab_setting_headline"); ?>" /></td>
+                <td><input type="text" name="nstab_setting_headline" placeholder="<?php echo __("e.g. A Post by", "author-box-by-nocksoft"); ?>" value="<?php echo get_option("nstab_setting_headline"); ?>" /></td>
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Fontsize of Header (em)", "author-box-by-nocksoft"); ?></th>
-                <td><input type="number" name="nstab_setting_fontsizeheader" min="0.5" max="2" step="0.1" value="<?php echo $fontsizeheader; ?>" /></td>
+                <th scope="row"><?php echo __("Fontsize of Headline (em)", "author-box-by-nocksoft"); ?></th>
+                <td><input type="number" name="nstab_setting_fontsizeheadline" min="0.5" max="2" step="0.1" value="<?php echo $fontsizeheadline; ?>" /></td>
+                </tr>
+
+                <tr valign="top">
+                <th scope="row"><?php echo __("Fontsize of author's Position (em)", "author-box-by-nocksoft"); ?></th>
+                <td><input type="number" name="nstab_setting_fontsizeposition" min="0.4" max="0.9" step="0.1" value="<?php echo $fontsizeposition; ?>" /></td>
                 </tr>
 
                 <tr valign="top">
