@@ -11,7 +11,7 @@ function nstab_add_authorbox($content) {
             $circleavatar = "class='nstab_circle'";
         }
         
-        require_once plugin_dir_path(__FILE__) . "settings-defaults.php";
+        require plugin_dir_path(__FILE__) . "settings-defaults.php";
 
         $authorlinktext = get_the_author_meta("nstab_setting_homepage_linktext");
         $authorlinkurl = get_the_author_meta("nstab_setting_homepage_linkurl");

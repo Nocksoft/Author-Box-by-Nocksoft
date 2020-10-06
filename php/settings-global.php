@@ -32,7 +32,7 @@ add_action("admin_init", function() {
 function nstab_globalsettings() {
     if (!current_user_can("manage_options")) return;
 
-    require_once plugin_dir_path(__FILE__) . "settings-defaults.php";
+    require plugin_dir_path(__FILE__) . "settings-defaults.php";
     ?>
     <div class="wrap">
         <h1><?= esc_html(get_admin_page_title()); ?></h1>
