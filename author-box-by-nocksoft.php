@@ -5,7 +5,7 @@
 	Version: 1.0.1
 	Author: Rafael Nockmann @ Nocksoft
 	Author URI: https://nocksoft.de
-	Description: Adds a modern author info box at the end of your posts and implements local avatars as an alternative to Gravatar.
+	Description: Adds a modern customizable author info box at the end of your posts and implements support for local avatars.
 	Text Domain: author-box-by-nocksoft
 	License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html

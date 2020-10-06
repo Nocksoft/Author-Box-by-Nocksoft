@@ -1,6 +1,6 @@
 === Author Box by Nocksoft ===
 Contributors: nocksoft
-Tags: author box, author bio, author description, author profile, about author, about me, author, local avatars
+Tags: author box, author bio, author description, local avatars, about author, about me, author profile, author
 Stable tag: trunk
 Requires at least: 4.9
 Tested up to: 5.5
@@ -11,7 +11,7 @@ Adds a modern author info box at the end of your posts and implements local avat
 
 
 == Description ==
-Adds a modern author info box at the end of your posts and implements local avatars. This plugin is available in German and English language.
+Adds a modern customizable author info box at the end of your posts and implements support for local avatars. This plugin is available in German and English language.
 
 == Features ==
 * Adds author box at the end of posts
@@ -19,9 +19,10 @@ Adds a modern author info box at the end of your posts and implements local avat
 
 == Setup ==
 * Install plugin
-* (optional) Go to settings -> Author Box to setup size of avatars or other settings like look of avatars
+* (optional) Go to settings -> Author Box to setup global settings like font sizes or other settings like look of avatars
 * Go to user profiles to enter biographical info
 * (optional) Go to user profiles to tick local avatars and enter a URL to you personal avatar
+* (optional) Go to user profiles to enter other informations about the author
 
 == Frequently Asked Questions ==
  
@@ -33,7 +34,7 @@ You have two options. Either through Gravatar, or you can specify a URL to a pre
 
 You can do this in your user profile settings.
 
-= Where can I generally make settings for this plugin? =
+= Where can I make settings for this plugin? =
 
 You can adjust settings in the user profile settings and in the global settings under "Settings" -> "Author Box".
 
@@ -73,4 +74,6 @@ You have two options. Either you choose the setting that this plugins author box
 * first release
 
 == Screenshots ==
-1. Author Box at the end of posts
+1. Author Box at the end of a Post
+2. Global Settings for Author Box
+3. User specific Settings for Author Box

@@ -1,6 +1,6 @@
 #. Description of the plugin/theme
-msgid "Adds a modern author info box at the end of your posts and implements local avatars as an alternative to Gravatar."
-msgstr "F&uuml;gt eine moderne Autoren Box am Ende deines Beitrages ein und implementiert lokale Avatare als eine Alternative zu Gravatar."
+msgid "Adds a modern customizable author info box at the end of your posts and implements support for local avatars."
+msgstr "F&uuml;gt eine moderne anpassbare Autoren Info Box am Ende deines Beitrages ein und bringt Support f&uuml;r lokale Avatare."
 
 #: author-box-by-nocksoft.php:19
 msgid "Settings"
