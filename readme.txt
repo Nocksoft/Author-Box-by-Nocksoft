@@ -51,6 +51,9 @@ You have two options. Either you choose the setting that this plugins author box
 
 == Changelog ==
 
+= 1.x.x =
+* fixed PHP warnings
+
 = 1.0.3 =
 * fixed a bug that caused global settings do not work
 

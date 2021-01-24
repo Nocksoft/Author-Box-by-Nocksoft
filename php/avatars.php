@@ -2,8 +2,8 @@
 
 /* Returns the avatar URL */
 function nstab_get_avatarurl() {
-    if (get_the_author_meta("nstab_setting_localavatar", $user->ID) != "on") return get_avatar_url(get_the_author_meta("ID"), $avatarsize);
-    else return get_the_author_meta("nstab_setting_avatarurl", $user->ID);
+	if (get_the_author_meta("nstab_setting_localavatar") != "on") return get_avatar_url(get_the_author_meta("ID"));
+    else return get_the_author_meta("nstab_setting_avatarurl");
 }
 
 
