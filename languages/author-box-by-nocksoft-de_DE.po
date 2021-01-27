@@ -118,10 +118,10 @@ msgstr "Link URL (z.B. https://deineseite.de)"
 msgid "This URL will be displayed below your biography in the Author Box."
 msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."
 
-#: authorbox.php:21
+#: authorbox.php:37
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
-#: authorbox.php:28
+#: authorbox.php:44
 msgid "View Archive"
 msgstr "Archiv anzeigen"

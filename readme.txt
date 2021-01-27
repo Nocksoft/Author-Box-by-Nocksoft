@@ -16,6 +16,7 @@ Adds a modern customizable author info box at the end of your posts and implemen
 == Features ==
 * Adds author box at the end of posts
 * Adds support for local avatars
+* Adds shortcode for author box
 
 == Setup ==
 * Install plugin
@@ -23,6 +24,9 @@ Adds a modern customizable author info box at the end of your posts and implemen
 * Go to user profiles to enter biographical info
 * (optional) Go to user profiles to tick local avatars and enter a URL to you personal avatar
 * (optional) Go to user profiles to enter other informations about the author
+
+== Shortcode ==
+`[authorbox]`
 
 == Frequently Asked Questions ==
  
@@ -53,6 +57,7 @@ You have two options. Either you choose the setting that this plugins author box
 
 = 1.x.x =
 * fixed PHP warnings
+* added shortcode for Author Box
 
 = 1.0.3 =
 * fixed a bug that caused global settings do not work
