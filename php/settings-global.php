@@ -23,7 +23,7 @@ add_action("admin_init", function() {
     register_setting("nstab_settings", "nstab_setting_fontsizebio");
     register_setting("nstab_settings", "nstab_setting_fontsizelinks");
     register_setting("nstab_settings", "nstab_setting_displayauthorsarchive");
-    register_setting("nstab_settings", "nstab_setting_dontdisplayauthorbox");
+    register_setting("nstab_settings", "nstab_setting_displayauthorboxonposts");
     register_setting("nstab_settings", "nstab_setting_hidewordpressauthorbox");
 });
 
@@ -91,12 +91,12 @@ function nstab_globalsettings() {
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Do not show Author Box (useful if an Author Biography or Author Box is displayed by a theme or another plugin)", "author-box-by-nocksoft"); ?></th>
-                <td><input type="checkbox" name="nstab_setting_dontdisplayauthorbox" <?php if (get_option("nstab_setting_dontdisplayauthorbox") == true) echo "checked"; ?> /></td>
+                <th scope="row"><?php echo __("Display Author Box at the end of each post automatically", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_displayauthorboxonposts" <?php if (get_option("nstab_setting_displayauthorboxonposts", true) == true) echo "checked"; ?> /></td>
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Hide author box from default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty)", "author-box-by-nocksoft"); ?></th>
+                <th scope="row"><?php echo __("Hide the author box of default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty-One)", "author-box-by-nocksoft"); ?></th>
                 <td><input type="checkbox" name="nstab_setting_hidewordpressauthorbox" <?php if (get_option("nstab_setting_hidewordpressauthorbox") == true) echo "checked"; ?> /></td>
                 </tr>
             </table>

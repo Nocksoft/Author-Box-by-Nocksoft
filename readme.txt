@@ -3,7 +3,7 @@ Contributors: nocksoft
 Tags: author box, author bio, author description, local avatars, about author, about me, author profile, author
 Stable tag: trunk
 Requires at least: 4.9
-Tested up to: 5.5
+Tested up to: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,19 +11,22 @@ Adds a modern author info box at the end of your posts and implements local avat
 
 
 == Description ==
-Adds a modern customizable author info box at the end of your posts and implements support for local avatars. This plugin is available in German and English language.
+Adds a modern customizable author info box at the end of your posts and implements support for local avatars. You can display a simple author bio box in your posts and pages to show your readers and followers who you are.
+Your blog will become even more personal and authentic. This plugin is available in German and English language.
 
 == Features ==
-* Adds author box at the end of posts
-* Adds support for local avatars
-* Adds shortcode for author box
+* Adds a simple lightweight Author Box at the end of your posts with a short description about the author
+* Adds support for local avatars for authors so that you dont need to use an Gravatar account
+* Option for displaying a link to an own "About Me Page" in Author Box for post authors
+* Adds shortcode for Author Box so that you can insert a Author Box anywhere you want
+* Allows to hide the author box of default WordPress theme
 
 == Setup ==
-* Install plugin
-* (optional) Go to settings -> Author Box to setup global settings like font sizes or other settings like look of avatars
-* Go to user profiles to enter biographical info
-* (optional) Go to user profiles to tick local avatars and enter a URL to you personal avatar
-* (optional) Go to user profiles to enter other informations about the author
+* Install plugin.
+* (optional) Go to "Settings" -> "Author Box" to setup global settings like font sizes or other settings like look of avatars.
+* Go to user profiles to enter biographical info.
+* (optional) Go to user profiles to tick local avatars and enter a URL to you personal avatar.
+* (optional) Go to user profiles to enter other informations about the author.
 
 == Shortcode ==
 `[authorbox]`
@@ -52,39 +55,41 @@ You have two options. Either you choose the setting that this plugins author box
 2. Unzip the zip file contents.
 3. Upload the author-box-by-nocksoft folder to the /wp-content/plugins/ directory.
 4. Activate the plugin in the "Plugins" menu in WordPress.
+5. Make a few settings (see section "Setup" on this page).
 
 == Changelog ==
 
 = 1.x.x =
-* fixed PHP warnings
-* added shortcode for Author Box
+* Fixed PHP warnings for PHP 8
+* Added shortcode for Author Box
+* Optimized settings
 
 = 1.0.3 =
-* fixed a bug that caused global settings do not work
+* Fixed a bug that caused global settings do not work
 
 = 1.0.2 =
-* headline can now be adjusted
-* users can now add their custom URL including link text for the Author Box footer
-* improved descriptions and translations
-* font size of the biography and the links can now be adjusted
-* option added to show a link to author's archive
-* set Arial as default font
-* border of Author Box can now be hidden
-* authors can now specify their own position, which is displayed below their name
+* Headline can now be adjusted
+* Users can now add their custom URL including link text for the Author Box footer
+* Improved descriptions and translations
+* Font size of the biography and the links can now be adjusted
+* Added option to show a link to author's archive
+* Set Arial as default font
+* Border of Author Box can now be hidden
+* Authors can now specify their own position, which is displayed below their name
 
 = 1.0.1 =
-* font size of the headline can now be adjusted
-* option added that allows just replace Gravatar through local avatars without displaying Avatar Box
-* positioning of the author box improved
-* positioning of the hyperlink improved
-* setting link to plugin overview page added
-* setting for circle avatars added
-* author box from default WordPress theme can now be hidden
+* Font size of the headline can now be adjusted
+* Added option that allows just replace Gravatar through local avatars without displaying Author Box
+* Positioning of the Author Box improved
+* Positioning of the hyperlink improved
+* Added new link "Settings" to plugin overview page
+* Added setting for circle avatars
+* Author Box from default WordPress theme can now be hidden
 
 = 1.0.0 =
-* first release
+* First release
 
 == Screenshots ==
-1. Author Box at the end of a Post
-2. Global Settings for Author Box
-3. User specific Settings for Author Box
+1. Author Box in action
+2. Global settings for Author Box
+3. User specific settings for Author Box
