@@ -12,6 +12,7 @@ function nstab_activate_plugin() {
     add_option("nstab_setting_fontsizelinks", "0.8");
     add_option("nstab_setting_displayauthorsarchive", "");
     add_option("nstab_setting_displayauthorboxonposts", "on");
+    add_option("nstab_setting_displayauthorboxonpages", "");
     add_option("nstab_setting_hidewordpressauthorbox", "");
 }
 
@@ -27,6 +28,7 @@ function nstab_uninstall_plugin() {
     delete_option("nstab_setting_fontsizelinks");
     delete_option("nstab_setting_displayauthorsarchive");
     delete_option("nstab_setting_displayauthorboxonposts");
+    delete_option("nstab_setting_displayauthorboxonpages");
     delete_option("nstab_setting_hidewordpressauthorbox");
 
     /* Clear user settings */

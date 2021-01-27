@@ -58,7 +58,11 @@ msgstr "Zeige einen Link zum Archiv des Autors an"
 msgid "Display Author Box at the end of each post automatically"
 msgstr "F&uuml;ge die Author Box am Ende von Beitr&auml;gen automatisch hinzu"
 
-#: settings-global.php:99
+#: settings-global.php:100
+msgid "Display Author Box at the end of each page automatically"
+msgstr "F&uuml;ge die Author Box am Ende von Seiten automatisch hinzu"
+
+#: settings-global.php:105
 msgid "Hide the author box of default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty-One)"
 msgstr "Verstecke die Autor-Biografie (Author Box) vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty-One)"
 

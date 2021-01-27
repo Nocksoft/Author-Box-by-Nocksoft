@@ -24,6 +24,7 @@ add_action("admin_init", function() {
     register_setting("nstab_settings", "nstab_setting_fontsizelinks");
     register_setting("nstab_settings", "nstab_setting_displayauthorsarchive");
     register_setting("nstab_settings", "nstab_setting_displayauthorboxonposts");
+    register_setting("nstab_settings", "nstab_setting_displayauthorboxonpages");
     register_setting("nstab_settings", "nstab_setting_hidewordpressauthorbox");
 });
 
@@ -93,6 +94,11 @@ function nstab_globalsettings() {
                 <tr valign="top">
                 <th scope="row"><?php echo __("Display Author Box at the end of each post automatically", "author-box-by-nocksoft"); ?></th>
                 <td><input type="checkbox" name="nstab_setting_displayauthorboxonposts" <?php if (get_option("nstab_setting_displayauthorboxonposts", true) == true) echo "checked"; ?> /></td>
+                </tr>
+
+                <tr valign="top">
+                <th scope="row"><?php echo __("Display Author Box at the end of each page automatically", "author-box-by-nocksoft"); ?></th>
+                <td><input type="checkbox" name="nstab_setting_displayauthorboxonpages" <?php if (get_option("nstab_setting_displayauthorboxonpages") == true) echo "checked"; ?> /></td>
                 </tr>
 
                 <tr valign="top">

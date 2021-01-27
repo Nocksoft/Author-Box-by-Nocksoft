@@ -10,7 +10,10 @@ add_shortcode("authorbox", "nstab_shortcode_authorbox");
 /* Adds Author Box at end of posts */
 add_filter("the_content", "nstab_add_authorbox");
 function nstab_add_authorbox($content) {
-    if (get_option("nstab_setting_displayauthorboxonposts", true) == true && is_single()) {
+    if (is_single() && get_option("nstab_setting_displayauthorboxonposts", true) == true) {
+        $content .= nstab_get_authorbox();
+    }
+    else if (is_page() && get_option("nstab_setting_displayauthorboxonpages") == true) {
         $content .= nstab_get_authorbox();
     }
     return $content;

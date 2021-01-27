@@ -63,6 +63,7 @@ You have two options. Either you choose the setting that this plugins author box
 * Fixed PHP warnings for PHP 8
 * Added shortcode for Author Box
 * Optimized settings
+* Added option to automatically display Author Box in pages
 
 = 1.0.3 =
 * Fixed a bug that caused global settings do not work
