@@ -72,7 +72,7 @@ You have two options. Either you choose the setting that this plugins author box
 
 == Changelog ==
 
-= 1.x.x =
+= 1.0.4 =
 * Fixed PHP warnings for PHP 8
 * Added shortcode for Author Box
 * Optimized settings
