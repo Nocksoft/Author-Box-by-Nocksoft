@@ -59,8 +59,8 @@ msgid "Display Author Box at the end of each post automatically"
 msgstr "F&uuml;ge die Author Box am Ende von Beitr&auml;gen automatisch hinzu"
 
 #: settings-global.php:100
-msgid "Display Author Box at the end of each page automatically"
-msgstr "F&uuml;ge die Author Box am Ende von Seiten automatisch hinzu"
+msgid "Display Author Box at the end of each page automatically (not on front page, blog homepage and privacy policy)"
+msgstr "F&uuml;ge die Author Box am Ende von Seiten automatisch hinzu (nicht auf Startseite, Beitragsseite und Datenschutzerkl&auml;rung)"
 
 #: settings-global.php:105
 msgid "Hide the author box of default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty-One)"
@@ -122,10 +122,10 @@ msgstr "Link URL (z.B. https://deineseite.de)"
 msgid "This URL will be displayed below your biography in the Author Box."
 msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."
 
-#: authorbox.php:37
+#: authorbox.php:41
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
-#: authorbox.php:44
+#: authorbox.php:48
 msgid "View Archive"
 msgstr "Archiv anzeigen"

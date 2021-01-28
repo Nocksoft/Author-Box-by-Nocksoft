@@ -45,6 +45,19 @@ You can do this in your user profile settings.
 
 You can adjust settings in the user profile settings and in the global settings under "Settings" -> "Author Box".
 
+= What if I want to automatically display Author Box on all pages, but not on a specific page? =
+
+You can add the following code in your functions.php and replace SAMPLEPAGE with your desired page:
+`
+add_action("wp_head", "remove_authorbox");
+function remove_authorbox() {
+	global $pagename;
+	if (is_page() && function_exists("nstab_add_authorbox") && $pagename == "SAMPLEPAGE") {
+		remove_action("the_content", "nstab_add_authorbox");
+	}
+}
+`
+
 = What if my theme also shows an author box? =
 
 You have two options. Either you choose the setting that this plugins author box is hidden (you can still take advantage of the local avatars) or you choose the setting that the author box of your theme is no longer displayed. For the WordPress default themes you will find a suitable setting in this plugins settings.

@@ -97,7 +97,7 @@ function nstab_globalsettings() {
                 </tr>
 
                 <tr valign="top">
-                <th scope="row"><?php echo __("Display Author Box at the end of each page automatically", "author-box-by-nocksoft"); ?></th>
+                <th scope="row"><?php echo __("Display Author Box at the end of each page automatically (not on front page, blog homepage and privacy policy)", "author-box-by-nocksoft"); ?></th>
                 <td><input type="checkbox" name="nstab_setting_displayauthorboxonpages" <?php if (get_option("nstab_setting_displayauthorboxonpages") == true) echo "checked"; ?> /></td>
                 </tr>
 

@@ -13,7 +13,8 @@ function nstab_add_authorbox($content) {
     if (is_single() && get_option("nstab_setting_displayauthorboxonposts", true) == true) {
         $content .= nstab_get_authorbox();
     }
-    else if (is_page() && get_option("nstab_setting_displayauthorboxonpages") == true) {
+    else if (is_page() && get_option("nstab_setting_displayauthorboxonpages") == true
+        && !is_front_page() && !is_home() && !is_privacy_policy()) {
         $content .= nstab_get_authorbox();
     }
     return $content;
