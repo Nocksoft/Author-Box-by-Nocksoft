@@ -16,7 +16,7 @@ msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&au
 
 #: settings-global.php:49
 msgid "Show Border of Author Box"
-msgstr "Stelle den Rand der Author Box dar"
+msgstr "Stelle den Rahmen der Author Box dar"
 
 #: settings-global.php:54
 msgid "Size of Avatar (Pixel)"
@@ -40,7 +40,7 @@ msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
 #: settings-global.php:74
 msgid "Fontsize of author's Position (em)"
-msgstr "Schriftgr&ouml;&szlig;e der Position vom Autor (em)"
+msgstr "Schriftgr&ouml;&szlig;e der Position des Autors (em)"
 
 #: settings-global.php:79
 msgid "Fontsize of Biography (em)"
@@ -72,7 +72,7 @@ msgstr "Einstellungen speichern"
 
 #: settings-user.php:12
 msgid "Here you can make further settings for your avatar or other personal settings. The WordPress administrator can adjust global settings under Settings -> Author Box."
-msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar oder weiteren pers&ouml;nlichen Einstellungen vornehmen. Globale Einstellungen kann der WordPress-Administrator unter Einstellungen -> Author Box vornehmen."
+msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar oder weitere pers&ouml;nliche Einstellungen vornehmen. Globale Einstellungen kann der WordPress-Administrator unter Einstellungen -> Author Box vornehmen."
 
 #: settings-user.php:16
 msgid "Local avatars"
