@@ -62,7 +62,8 @@ function nstab_save_usersettings($user_id) {
         return false;
     }
     else {
-        update_usermeta($user_id, "nstab_setting_localavatar", $_POST["nstab_setting_localavatar"]);
+		$nstab_setting_localavatar = isset($_POST["nstab_setting_localavatar"]) ? $_POST["nstab_setting_localavatar"] : false;
+        update_usermeta($user_id, "nstab_setting_localavatar", $nstab_setting_localavatar);
         update_usermeta($user_id, "nstab_setting_avatarurl", trim($_POST["nstab_setting_avatarurl"]));
         update_usermeta($user_id, "nstab_setting_authorposition", trim($_POST["nstab_setting_authorposition"]));
         update_usermeta($user_id, "nstab_setting_homepage_linktext", trim($_POST["nstab_setting_homepage_linktext"]));
