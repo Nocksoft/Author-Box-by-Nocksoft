@@ -10,63 +10,71 @@ msgstr "Einstellungen"
 msgid "A Post by"
 msgstr "Ein Beitrag von"
 
-#: settings-global.php:45
-msgid "User-specific settings are made in your author profile in WordPress (Users -> Your Profile). General settings can be made here."
-msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
+#: settings-global.php:43
+msgid "User-specific settings are made in your user profile in WordPress (Users -> Your Profile -> Edit). General settings can be made here."
+msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil -> Bearbeiten). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php:49
-msgid "Show Border of Author Box"
-msgstr "Stelle den Rahmen der Author Box dar"
+#: settings-global.php:46
+msgid "General"
+msgstr "Allgemein"
 
-#: settings-global.php:54
-msgid "Size of Avatar (Pixel)"
-msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
+#: settings-global.php:47
+msgid "Layout"
+msgstr "Aussehen"
 
-#: settings-global.php:59
-msgid "Use a circle avatar instead of a square"
-msgstr "Verwende ein rundes statt ein eckiges Profilbild"
-
-#: settings-global.php:64
-msgid "Headline"
-msgstr "Text der &Uuml;berschrift"
-
-#: settings-global.php:65
-msgid "e.g. A Post by"
-msgstr "z.B. Ein Beitrag von"
-
-#: settings-global.php:69
-msgid "Fontsize of Headline (em)"
-msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
-
-#: settings-global.php:74
-msgid "Fontsize of author's Position (em)"
-msgstr "Schriftgr&ouml;&szlig;e der Position des Autors (em)"
-
-#: settings-global.php:79
-msgid "Fontsize of Biography (em)"
-msgstr "Schriftgr&ouml;&szlig;e der Biografie (em)"
-
-#: settings-global.php:84
-msgid "Fontsize of Links (em)"
-msgstr "Schriftgr&ouml;&szlig;e der Links (em)"
-
-#: settings-global.php:89
-msgid "Display a link to the author's archive"
-msgstr "Zeige einen Link zum Archiv des Autors an"
-
-#: settings-global.php:94
+#: settings-global.php:67
 msgid "Display Author Box at the end of each post automatically"
 msgstr "F&uuml;ge die Author Box am Ende von Beitr&auml;gen automatisch hinzu"
 
-#: settings-global.php:100
+#: settings-global.php:72
 msgid "Display Author Box at the end of each page automatically (not on front page, blog homepage and privacy policy)"
 msgstr "F&uuml;ge die Author Box am Ende von Seiten automatisch hinzu (nicht auf Startseite, Beitragsseite und Datenschutzerkl&auml;rung)"
 
-#: settings-global.php:105
+#: settings-global.php:77
 msgid "Hide the author box of default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty-One)"
 msgstr "Verstecke die Autor-Biografie (Author Box) vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty-One)"
 
-#: settings-global.php:105
+#: settings-global.php:87
+msgid "Show Border of Author Box"
+msgstr "Stelle den Rahmen der Author Box dar"
+
+#: settings-global.php:92
+msgid "Size of Avatar (Pixel)"
+msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
+
+#: settings-global.php:97
+msgid "Use a circle avatar instead of a square"
+msgstr "Verwende ein rundes statt ein eckiges Profilbild"
+
+#: settings-global.php:102
+msgid "Headline"
+msgstr "Text der &Uuml;berschrift"
+
+#: settings-global.php:103
+msgid "e.g. A Post by"
+msgstr "z.B. Ein Beitrag von"
+
+#: settings-global.php:107
+msgid "Fontsize of Headline (em)"
+msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
+
+#: settings-global.php:112
+msgid "Fontsize of author's Position (em)"
+msgstr "Schriftgr&ouml;&szlig;e der Position des Autors (em)"
+
+#: settings-global.php:117
+msgid "Fontsize of Biography (em)"
+msgstr "Schriftgr&ouml;&szlig;e der Biografie (em)"
+
+#: settings-global.php:122
+msgid "Fontsize of Links (em)"
+msgstr "Schriftgr&ouml;&szlig;e der Links (em)"
+
+#: settings-global.php:127
+msgid "Display a link to the author's archive"
+msgstr "Zeige einen Link zum Archiv des Autors an"
+
+#: settings-global.php:137
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
