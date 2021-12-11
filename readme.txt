@@ -72,6 +72,9 @@ You have two options. Either you choose the setting that this plugins author box
 
 == Changelog ==
 
+= 1.x.x =
+* Fixed a bug that may caused local avatars do not work properly in some themes like Blocksy
+
 = 1.0.4 =
 * Fixed PHP warnings for PHP 8
 * Added shortcode for Author Box

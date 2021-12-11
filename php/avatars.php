@@ -2,7 +2,7 @@
 
 /* Returns the avatar URL */
 function nstab_get_avatarurl() {
-	if (get_the_author_meta("nstab_setting_localavatar") != "on") return get_avatar_url(get_the_author_meta("ID"));
+	if (get_the_author_meta("nstab_setting_localavatar") != "on") return get_avatar_url(get_user_meta("ID"));
     else return get_the_author_meta("nstab_setting_avatarurl");
 }
 
@@ -35,6 +35,16 @@ function nstab_get_avatar($avatar, $id_or_email, $size, $default, $alt) {
     }
 
     return $avatar;
+}
+
+/* Some themes like Blocksy may try to retrieve the avatar URL early */
+/* https://developer.wordpress.org/reference/hooks/pre_get_avatar_data/ */
+add_filter("pre_get_avatar_data", "nstab_pre_get_avatar_data", 10, 2);
+function nstab_pre_get_avatar_data($args, $id_or_email) {
+	$author_id = get_the_author_meta("ID");
+	if ($id_or_email == $author_id) $args["url"] = nstab_get_avatarurl();
+	
+	return $args;
 }
 
 ?>
