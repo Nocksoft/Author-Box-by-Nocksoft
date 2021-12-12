@@ -1,23 +1,30 @@
 <?php
 
 function nstab_activate_plugin() {
-    /* Default settings */
-    add_option("nstab_setting_showborder", "on");
-    add_option("nstab_setting_avatarsize", "100");
-    add_option("nstab_setting_circleavatar", "");
-    add_option("nstab_setting_headline", __("A Post by", "author-box-by-nocksoft"));
-    add_option("nstab_setting_fontsizeheadline", "1.1");
-    add_option("nstab_setting_fontsizeposition", "0.7");
-    add_option("nstab_setting_fontsizebio", "0.9");
-    add_option("nstab_setting_fontsizelinks", "0.8");
-    add_option("nstab_setting_displayauthorsarchive", "");
-    add_option("nstab_setting_displayauthorboxonposts", "on");
-    add_option("nstab_setting_displayauthorboxonpages", "");
-    add_option("nstab_setting_hidewordpressauthorbox", "");
+    /* Setup default global settings */
+	require plugin_dir_path(__FILE__) . "settings-defaults.php";
+	
+	add_option("nstab_setting_displayauthorboxonposts", $nstab_setting_default_displayauthorboxonposts);
+    add_option("nstab_setting_displayauthorboxonpages", $nstab_setting_default_displayauthorboxonpages);
+    add_option("nstab_setting_hidewordpressauthorbox", $nstab_setting_default_hidewordpressauthorbox);
+	
+    add_option("nstab_setting_showborder", $nstab_setting_default_showborder);
+    add_option("nstab_setting_avatarsize", $nstab_setting_default_avatarsize);
+    add_option("nstab_setting_circleavatar", $nstab_setting_default_circleavatar);
+    add_option("nstab_setting_headline", $nstab_setting_default_headline);
+    add_option("nstab_setting_fontsizeheadline", $nstab_setting_default_fontsizeheadline);
+    add_option("nstab_setting_fontsizeposition", $nstab_setting_default_fontsizeposition);
+    add_option("nstab_setting_fontsizebio", $nstab_setting_default_fontsizebio);
+    add_option("nstab_setting_fontsizelinks", $nstab_setting_default_fontsizelinks);
+    add_option("nstab_setting_displayauthorsarchive", $nstab_setting_default_displayauthorsarchive);
 }
 
 function nstab_uninstall_plugin() {
     /* Clear global settings */
+	delete_option("nstab_setting_displayauthorboxonposts");
+    delete_option("nstab_setting_displayauthorboxonpages");
+    delete_option("nstab_setting_hidewordpressauthorbox");
+	
     delete_option("nstab_setting_showborder");
     delete_option("nstab_setting_avatarsize");
     delete_option("nstab_setting_circleavatar");
@@ -27,9 +34,6 @@ function nstab_uninstall_plugin() {
     delete_option("nstab_setting_fontsizebio");
     delete_option("nstab_setting_fontsizelinks");
     delete_option("nstab_setting_displayauthorsarchive");
-    delete_option("nstab_setting_displayauthorboxonposts");
-    delete_option("nstab_setting_displayauthorboxonpages");
-    delete_option("nstab_setting_hidewordpressauthorbox");
 
     /* Clear user settings */
     $users = get_users();

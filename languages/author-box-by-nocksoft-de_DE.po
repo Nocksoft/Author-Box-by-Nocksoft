@@ -2,79 +2,87 @@
 msgid "Adds a modern customizable author info box at the end of your posts and implements support for local avatars."
 msgstr "F&uuml;gt eine moderne anpassbare Autoren Info Box am Ende deines Beitrages ein und bringt Support f&uuml;r lokale Avatare."
 
-#: author-box-by-nocksoft.php:19
+#: author-box-by-nocksoft.php:20
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: setup.php:8
+#: authorbox.php:51
+msgid "View Archive"
+msgstr "Archiv anzeigen"
+
+#: authorbox.php:58
+msgid "View Archive"
+msgstr "Archiv anzeigen"
+
+#: settings-defaults.php:12
 msgid "A Post by"
 msgstr "Ein Beitrag von"
 
-#: settings-global.php:43
+#: settings-global.php:56
 msgid "User-specific settings are made in your user profile in WordPress (Users -> Your Profile -> Edit). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil -> Bearbeiten). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php:46
+#: settings-global.php:59
 msgid "General"
 msgstr "Allgemein"
 
-#: settings-global.php:47
+#: settings-global.php:60
 msgid "Layout"
 msgstr "Aussehen"
 
-#: settings-global.php:67
+#: settings-global.php:80
 msgid "Display Author Box at the end of each post automatically"
 msgstr "F&uuml;ge die Author Box am Ende von Beitr&auml;gen automatisch hinzu"
 
-#: settings-global.php:72
+#: settings-global.php:85
 msgid "Display Author Box at the end of each page automatically (not on front page, blog homepage and privacy policy)"
 msgstr "F&uuml;ge die Author Box am Ende von Seiten automatisch hinzu (nicht auf Startseite, Beitragsseite und Datenschutzerkl&auml;rung)"
 
-#: settings-global.php:77
+#: settings-global.php:90
 msgid "Hide the author box of default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty-One)"
 msgstr "Verstecke die Autor-Biografie (Author Box) vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty-One)"
 
-#: settings-global.php:87
+#: settings-global.php:100
 msgid "Show Border of Author Box"
 msgstr "Stelle den Rahmen der Author Box dar"
 
-#: settings-global.php:92
+#: settings-global.php:105
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php:97
+#: settings-global.php:110
 msgid "Use a circle avatar instead of a square"
 msgstr "Verwende ein rundes statt ein eckiges Profilbild"
 
-#: settings-global.php:102
+#: settings-global.php:115
 msgid "Headline"
 msgstr "Text der &Uuml;berschrift"
 
-#: settings-global.php:103
+#: settings-global.php:116
 msgid "e.g. A Post by"
 msgstr "z.B. Ein Beitrag von"
 
-#: settings-global.php:107
+#: settings-global.php:120
 msgid "Fontsize of Headline (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
-#: settings-global.php:112
+#: settings-global.php:125
 msgid "Fontsize of author's Position (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Position des Autors (em)"
 
-#: settings-global.php:117
+#: settings-global.php:130
 msgid "Fontsize of Biography (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Biografie (em)"
 
-#: settings-global.php:122
+#: settings-global.php:135
 msgid "Fontsize of Links (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Links (em)"
 
-#: settings-global.php:127
+#: settings-global.php:140
 msgid "Display a link to the author's archive"
 msgstr "Zeige einen Link zum Archiv des Autors an"
 
-#: settings-global.php:137
+#: settings-global.php:150
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
@@ -129,11 +137,3 @@ msgstr "Link URL (z.B. https://deineseite.de)"
 #: settings-user.php:48
 msgid "This URL will be displayed below your biography in the Author Box."
 msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."
-
-#: authorbox.php:41
-msgid "View Archive"
-msgstr "Archiv anzeigen"
-
-#: authorbox.php:48
-msgid "View Archive"
-msgstr "Archiv anzeigen"

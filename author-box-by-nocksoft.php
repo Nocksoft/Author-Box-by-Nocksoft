@@ -27,6 +27,7 @@ function nstab_pluginsettingslink($links) {
 require_once plugin_dir_path(__FILE__) . "/php/setup.php";
 require_once plugin_dir_path(__FILE__) . "/php/avatars.php";
 require_once plugin_dir_path(__FILE__) . "/php/authorbox.php";
+require_once plugin_dir_path(__FILE__) . "/php/settings.php";
 require_once plugin_dir_path(__FILE__) . "/php/settings-global.php";
 require_once plugin_dir_path(__FILE__) . "/php/settings-user.php";
 
@@ -40,7 +41,7 @@ register_uninstall_hook(__FILE__, "nstab_uninstall_plugin");
 wp_register_style("author-box-by-nocksoft-style", plugin_dir_url(__FILE__) . "assets/style.css");
 wp_enqueue_style("author-box-by-nocksoft-style");
 
-if (get_option("nstab_setting_hidewordpressauthorbox") == true) {
+if ($nstab_setting_hidewordpressauthorbox == true) {
 	wp_register_style("author-box-by-nocksoft-hidewordpressauthorbox", plugin_dir_url(__FILE__) . "assets/hidewordpressauthorbox.css");
 	wp_enqueue_style("author-box-by-nocksoft-hidewordpressauthorbox");
 }
