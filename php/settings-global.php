@@ -18,6 +18,7 @@ add_action("admin_init", function() {
     register_setting("nstab_settings_general", "nstab_setting_displayauthorboxonpages");
     register_setting("nstab_settings_general", "nstab_setting_hidewordpressauthorbox");
 	
+	register_setting("nstab_settings_layout", "nstab_setting_font");
     register_setting("nstab_settings_layout", "nstab_setting_showborder");
     register_setting("nstab_settings_layout", "nstab_setting_avatarsize");
     register_setting("nstab_settings_layout", "nstab_setting_circleavatar");
@@ -38,6 +39,7 @@ function nstab_globalsettings() {
 	global $nstab_setting_displayauthorboxonpages;
 	global $nstab_setting_hidewordpressauthorbox;
 
+	global $nstab_setting_font;
 	global $nstab_setting_showborder;
 	global $nstab_setting_avatarsize;
 	global $nstab_setting_circleavatar;
@@ -99,6 +101,18 @@ function nstab_globalsettings() {
 				else if ($tab == "layout") {
 					?>
 					<table class="form-table">
+						<tr valign="top">
+						<th scope="row"><?php echo __("Font", "author-box-by-nocksoft"); ?></th>
+						<td>
+							<select id="nstab_setting_font" name="nstab_setting_font">
+								<option value="arial" <?php if ($nstab_setting_font == "arial") echo "selected"; ?>><?php echo __("Arial", "author-box-by-nocksoft"); ?></option>
+								<option value="inherit" <?php if ($nstab_setting_font == "inherit") echo "selected"; ?>><?php echo __("Inherit from website", "author-box-by-nocksoft"); ?></option>
+							</select>
+							<label for="nstab_setting_font"><?php echo __("Font of Author Box", "author-box-by-nocksoft"); ?></label>
+							<p class="description"><?php echo __("Inherit from website means that the fonts of the WordPress theme are used.", "author-box-by-nocksoft"); ?></p>
+						</td>
+						</tr>
+						
 						<tr valign="top">
 						<th scope="row"><?php echo __("Border", "author-box-by-nocksoft"); ?></th>
 						<td>

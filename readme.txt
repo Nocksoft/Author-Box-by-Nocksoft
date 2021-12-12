@@ -76,6 +76,7 @@ You have two options. Either you choose the setting that this plugins author box
 * Fixed a bug that may caused local avatars do not work properly in some themes like Blocksy
 * Fixed a PHP error while saving user specific settings
 * General settings page separated in tabs
+* Added option to inherit font from theme
 
 = 1.0.4 =
 * Fixed PHP warnings for PHP 8

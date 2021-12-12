@@ -6,6 +6,7 @@ $nstab_setting_default_displayauthorboxonpages = false;
 $nstab_setting_default_hidewordpressauthorbox = false;
 
 /* Global settings: layout */
+$nstab_setting_default_font = "arial";
 $nstab_setting_default_showborder = true;
 $nstab_setting_default_avatarsize = "100";
 $nstab_setting_default_circleavatar = false;

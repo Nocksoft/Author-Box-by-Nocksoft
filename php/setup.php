@@ -8,6 +8,7 @@ function nstab_activate_plugin() {
     add_option("nstab_setting_displayauthorboxonpages", $nstab_setting_default_displayauthorboxonpages);
     add_option("nstab_setting_hidewordpressauthorbox", $nstab_setting_default_hidewordpressauthorbox);
 	
+	add_option("nstab_setting_font", $nstab_setting_default_font);
     add_option("nstab_setting_showborder", $nstab_setting_default_showborder);
     add_option("nstab_setting_avatarsize", $nstab_setting_default_avatarsize);
     add_option("nstab_setting_circleavatar", $nstab_setting_default_circleavatar);
@@ -25,6 +26,7 @@ function nstab_uninstall_plugin() {
     delete_option("nstab_setting_displayauthorboxonpages");
     delete_option("nstab_setting_hidewordpressauthorbox");
 	
+	delete_option("nstab_setting_font");
     delete_option("nstab_setting_showborder");
     delete_option("nstab_setting_avatarsize");
     delete_option("nstab_setting_circleavatar");
