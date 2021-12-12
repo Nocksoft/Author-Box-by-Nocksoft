@@ -6,131 +6,135 @@ msgstr "F&uuml;gt eine moderne anpassbare Autoren Info Box am Ende deines Beitra
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: authorbox.php:52
+#: authorbox.php:53
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
-#: authorbox.php:59
+#: authorbox.php:60
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
-#: settings-defaults.php:13
+#: settings-defaults.php:14
 msgid "A Post by"
 msgstr "Ein Beitrag von"
 
-#: settings-global.php:58
+#: settings-global.php:60
 msgid "User-specific settings are made in your user profile in WordPress (Users -> Your Profile -> Edit). General settings can be made here."
 msgstr "Benutzerspezifische Einstellungen werden in deinem Benutzerprofil get&auml;tigt (Benutzer -> Dein Profil -> Bearbeiten). Allgemeine Einstellungen k&ouml;nnen hier vorgenommen werden."
 
-#: settings-global.php:61
+#: settings-global.php:63
 msgid "General"
 msgstr "Allgemein"
 
-#: settings-global.php:62
+#: settings-global.php:64
 msgid "Layout"
 msgstr "Aussehen"
 
-#: settings-global.php:81
+#: settings-global.php:83
 msgid "Author Box display options"
 msgstr "Author Box Anzeigeeinstellungen"
 
-#: settings-global.php:84
+#: settings-global.php:86
 msgid "Display Author Box at the end of each post automatically"
 msgstr "F&uuml;ge die Author Box am Ende von Beitr&auml;gen automatisch hinzu"
 
-#: settings-global.php:87
+#: settings-global.php:89
 msgid "Display Author Box at the end of each page automatically (not on front page, blog homepage and privacy policy)"
 msgstr "F&uuml;ge die Author Box am Ende von Seiten automatisch hinzu (nicht auf Startseite, Beitragsseite und Datenschutzerkl&auml;rung)"
 
-#: settings-global.php:92
+#: settings-global.php:94
 msgid "Other options"
 msgstr "Weitere Einstellungen"
 
-#: settings-global.php:95
+#: settings-global.php:97
 msgid "Hide the author box of default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty-One)"
 msgstr "Verstecke die Autor-Biografie (Author Box) vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty-One)"
 
-#: settings-global.php:105
-msgid "Font"
-msgstr "Schriftart"
+#: settings-global.php:107
+msgid "Basic"
+msgstr "Grundlegend"
 
-#: settings-global.php:108
+#: settings-global.php:110
 msgid "Arial"
 msgstr "Arial"
 
-#: settings-global.php:109
+#: settings-global.php:111
 msgid "Inherit from website"
 msgstr "Von Webseite erben"
 
-#: settings-global.php:111
+#: settings-global.php:113
 msgid "Font of Author Box"
 msgstr "Schriftart der Author Box"
 
-#: settings-global.php:112
+#: settings-global.php:114
 msgid "Inherit from website means that the fonts of the WordPress theme are used."
 msgstr "Von Webseite erben bedeutet, dass die Schriftart des WordPress Themes verwendet wird."
 
 #: settings-global.php:117
+msgid "Show Shadow of Author Box"
+msgstr "Stelle einen Schatten um die Author Box dar"
+
+#: settings-global.php:123
 msgid "Border"
 msgstr "Rahmen"
 
-#: settings-global.php:120
+#: settings-global.php:126
 msgid "Show Border of Author Box"
 msgstr "Stelle den Rahmen der Author Box dar"
 
-#: settings-global.php:125
+#: settings-global.php:131
 msgid "Avatar"
 msgstr "Avatar"
 
-#: settings-global.php:128
+#: settings-global.php:134
 msgid "Size of Avatar (Pixel)"
 msgstr "Gr&ouml;&szlig;e Avatar (Pixel)"
 
-#: settings-global.php:131
+#: settings-global.php:137
 msgid "Use a circle avatar instead of a square"
 msgstr "Verwende ein rundes statt ein eckiges Profilbild"
 
-#: settings-global.php:137
+#: settings-global.php:143
 msgid "Header"
 msgstr "Header"
 
-#: settings-global.php:139
+#: settings-global.php:145
 msgid "e.g. A Post by"
 msgstr "z.B. Ein Beitrag von"
 
-#: settings-global.php:140
+#: settings-global.php:146
 msgid "Headline"
 msgstr "Text der &Uuml;berschrift"
 
-#: settings-global.php:143
+#: settings-global.php:149
 msgid "Fontsize of Headline (em)"
 msgstr "Schriftgr&ouml;&szlig;e der &Uuml;berschrift (em)"
 
-#: settings-global.php:147
+#: settings-global.php:153
 msgid "Fontsize of author's Position (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Position des Autors (em)"
 
-#: settings-global.php:153
+#: settings-global.php:159
 msgid "Biography"
 msgstr "Biografie"
 
-#: settings-global.php:156
+#: settings-global.php:162
 msgid "Fontsize of Biography (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Biografie (em)"
 
-#: settings-global.php:161
+#: settings-global.php:167
 msgid "Footer"
 msgstr "Footer"
 
-#: settings-global.php:164
+#: settings-global.php:170
 msgid "Fontsize of Links (em)"
 msgstr "Schriftgr&ouml;&szlig;e der Links (em)"
 
-#: settings-global.php:167
+#: settings-global.php:173
 msgid "Display a link to the author's archive"
 msgstr "Zeige einen Link zum Archiv des Autors an"
 
-#: settings-global.php:178
+#: settings-global.php:184
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 

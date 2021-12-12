@@ -29,6 +29,7 @@ function nstab_add_authorbox($content) {
 /* Adds Author Box */
 function nstab_get_authorbox() {
 	global $nstab_setting_font;
+	global $nstab_setting_showshadow;
 	global $nstab_setting_showborder;
 	global $nstab_setting_avatarsize;
 	global $nstab_setting_circleavatar;
@@ -61,8 +62,9 @@ function nstab_get_authorbox() {
     }
 
     $font = $nstab_setting_font == "arial" ? "font-family: Arial;" : null;
+	$shadow = $nstab_setting_showshadow == true ? "padding: 0.75em; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" : null;
     $border = $nstab_setting_showborder == true ? "padding: 0.75em; border: 1px solid #EEEEEE;" : null;
-	$authorboxcontainer = "<div id='author-box-by-nocksoft' style='".$font.$border."'>";
+	$authorboxcontainer = "<div id='author-box-by-nocksoft' style='".$font.$shadow.$border."'>";
 	
     $authorbox = $authorboxcontainer .= "
             <div id='nstab_wrapper'>

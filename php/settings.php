@@ -9,6 +9,7 @@ $nstab_setting_hidewordpressauthorbox = get_option("nstab_setting_hidewordpressa
 
 /* Global settings: layout */
 $nstab_setting_font = get_option("nstab_setting_font", $nstab_setting_default_font);
+$nstab_setting_showshadow = get_option("nstab_setting_showshadow", $nstab_setting_default_showshadow);
 $nstab_setting_showborder = get_option("nstab_setting_showborder", $nstab_setting_default_showborder);
 $nstab_setting_avatarsize = get_option("nstab_setting_avatarsize", $nstab_setting_default_avatarsize);
 $nstab_setting_circleavatar = get_option("nstab_setting_circleavatar", $nstab_setting_default_circleavatar);
