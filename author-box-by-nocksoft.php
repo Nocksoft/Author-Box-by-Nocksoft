@@ -54,4 +54,10 @@ function nstab_load_plugin_textdomain() {
 add_action("plugins_loaded", "nstab_load_plugin_textdomain");
 
 
+/* --- Admin area --- */
+function nstab_loadcolorpicker() {
+	wp_enqueue_style("wp-color-picker");
+	wp_enqueue_script("custom-script-handle", plugin_dir_url(__FILE__) . "js/colorpicker.js", array("wp-color-picker"), false, true);
+}
+add_action("admin_enqueue_scripts", "nstab_loadcolorpicker");
 ?>

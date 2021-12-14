@@ -7,7 +7,7 @@ function nstab_shortcode_authorbox() {
 add_shortcode("authorbox", "nstab_shortcode_authorbox");
 
 
-/* Adds Author Box at end of posts */
+/* Adds Author Box at end of posts and pages automatically. */
 add_filter("the_content", "nstab_add_authorbox");
 function nstab_add_authorbox($content) {
 	global $nstab_setting_displayauthorboxonposts;
@@ -31,6 +31,8 @@ function nstab_get_authorbox() {
 	global $nstab_setting_font;
 	global $nstab_setting_showshadow;
 	global $nstab_setting_showborder;
+	global $nstab_setting_bordercolor;
+	global $nstab_setting_bordersize;
 	global $nstab_setting_avatarsize;
 	global $nstab_setting_circleavatar;
 	global $nstab_setting_headline;
@@ -63,7 +65,7 @@ function nstab_get_authorbox() {
 
     $font = $nstab_setting_font == "arial" ? "font-family: Arial;" : null;
 	$shadow = $nstab_setting_showshadow == true ? "padding: 0.75em; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" : null;
-    $border = $nstab_setting_showborder == true ? "padding: 0.75em; border: 1px solid #EEEEEE;" : null;
+    $border = $nstab_setting_showborder == true ? "padding: 0.75em; border: ".$nstab_setting_bordersize."px solid ".$nstab_setting_bordercolor.";" : null;
 	$authorboxcontainer = "<div id='author-box-by-nocksoft' style='".$font.$shadow.$border."'>";
 	
     $authorbox = $authorboxcontainer .= "

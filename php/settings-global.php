@@ -21,6 +21,8 @@ add_action("admin_init", function() {
 	register_setting("nstab_settings_layout", "nstab_setting_font");
 	register_setting("nstab_settings_layout", "nstab_setting_showshadow");
     register_setting("nstab_settings_layout", "nstab_setting_showborder");
+	register_setting("nstab_settings_layout", "nstab_setting_bordercolor");
+	register_setting("nstab_settings_layout", "nstab_setting_bordersize");
     register_setting("nstab_settings_layout", "nstab_setting_avatarsize");
     register_setting("nstab_settings_layout", "nstab_setting_circleavatar");
     register_setting("nstab_settings_layout", "nstab_setting_headline");
@@ -43,6 +45,9 @@ function nstab_globalsettings() {
 	global $nstab_setting_font;
 	global $nstab_setting_showshadow;
 	global $nstab_setting_showborder;
+	global $nstab_setting_default_bordercolor;
+	global $nstab_setting_bordercolor;
+	global $nstab_setting_bordersize;
 	global $nstab_setting_avatarsize;
 	global $nstab_setting_circleavatar;
 	global $nstab_setting_headline;
@@ -124,6 +129,13 @@ function nstab_globalsettings() {
 						<td>
 							<input type="checkbox" id="nstab_setting_showborder" name="nstab_setting_showborder" <?php if ($nstab_setting_showborder == true) echo "checked"; ?> />
 							<label for="nstab_setting_showborder"><?php echo __("Show Border of Author Box", "author-box-by-nocksoft"); ?></label>
+							<p>
+							<input type="text" id="nstab_setting_bordercolor" name="nstab_setting_bordercolor" class="nstab_colorpicker" value="<?php echo $nstab_setting_bordercolor; ?>" data-default-color="<?php echo $nstab_setting_default_bordercolor; ?>" />
+							<label for="nstab_setting_bordercolor"><?php echo __("Color of border", "author-box-by-nocksoft"); ?></label>
+							</p>
+							<input type="number" id="nstab_setting_bordersize" name="nstab_setting_bordersize" min="1" max="5" step="1" value="<?php echo $nstab_setting_bordersize; ?>" />
+							<label for="nstab_setting_bordersize"><?php echo __("Size of border", "author-box-by-nocksoft"); ?></label>
+							
 						</td>
 						</tr>
 

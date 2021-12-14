@@ -78,6 +78,7 @@ You have two options. Either you choose the setting that this plugins author box
 * General settings page separated in tabs
 * Added option to inherit font from theme
 * Added option to display shadow of Author Box
+* Added option to to adjust border size and border color of Author Box
 
 = 1.0.4 =
 * Fixed PHP warnings for PHP 8

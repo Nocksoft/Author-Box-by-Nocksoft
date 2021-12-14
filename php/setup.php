@@ -11,6 +11,8 @@ function nstab_activate_plugin() {
 	add_option("nstab_setting_font", $nstab_setting_default_font);
 	add_option("nstab_setting_showshadow", $nstab_setting_default_showshadow);
     add_option("nstab_setting_showborder", $nstab_setting_default_showborder);
+	add_option("nstab_setting_bordercolor", $nstab_setting_default_bordercolor);
+	add_option("nstab_setting_bordersize", $nstab_setting_default_bordersize);
     add_option("nstab_setting_avatarsize", $nstab_setting_default_avatarsize);
     add_option("nstab_setting_circleavatar", $nstab_setting_default_circleavatar);
     add_option("nstab_setting_headline", $nstab_setting_default_headline);
@@ -30,6 +32,8 @@ function nstab_uninstall_plugin() {
 	delete_option("nstab_setting_font");
 	delete_option("nstab_setting_showshadow");
     delete_option("nstab_setting_showborder");
+	delete_option("nstab_setting_bordercolor");
+	delete_option("nstab_setting_bordersize");
     delete_option("nstab_setting_avatarsize");
     delete_option("nstab_setting_circleavatar");
     delete_option("nstab_setting_headline");
