@@ -42,6 +42,8 @@ function nstab_get_authorbox() {
 	global $nstab_setting_fontsizelinks;
 	global $nstab_setting_displayauthorsarchive;
 	
+	$author_id = get_the_author_meta("ID");
+	
     $circleavatar = "";
     if ($nstab_setting_circleavatar == true) {
         $circleavatar = "class='nstab_circle'";
@@ -52,14 +54,14 @@ function nstab_get_authorbox() {
     if ($authorlinktext != null && $authorlinkurl != null) {
         $homepagehref = "<p id='nstab_links' style='font-size: " . $nstab_setting_fontsizelinks . "em;'><a href='" . $authorlinkurl . "'>" . $authorlinktext . "</a>";
         if ($nstab_setting_displayauthorsarchive == true) {
-            $homepagehref .= " | <a href='" . get_author_posts_url(get_the_author_meta("ID")) . "'>" . __("View Archive", "author-box-by-nocksoft") . "</a>";
+            $homepagehref .= " | <a href='" . get_author_posts_url($author_id) . "'>" . __("View Archive", "author-box-by-nocksoft") . "</a>";
         }
         $homepagehref .= "</p>";
     }
     else {
         $homepagehref = "";
         if ($nstab_setting_displayauthorsarchive == true) {
-            $homepagehref .= "<p id='nstab_links' style='font-size: " . $nstab_setting_fontsizelinks . "em;'><a href='" . get_author_posts_url(get_the_author_meta("ID")) . "'>" . __("View Archive", "author-box-by-nocksoft") . "</a></p>";
+            $homepagehref .= "<p id='nstab_links' style='font-size: " . $nstab_setting_fontsizelinks . "em;'><a href='" . get_author_posts_url($author_id) . "'>" . __("View Archive", "author-box-by-nocksoft") . "</a></p>";
         }
     }
 
@@ -68,9 +70,12 @@ function nstab_get_authorbox() {
     $border = $nstab_setting_showborder == true ? "padding: 0.75em; border: ".$nstab_setting_bordersize."px solid ".$nstab_setting_bordercolor.";" : null;
 	$authorboxcontainer = "<div id='author-box-by-nocksoft' style='".$font.$shadow.$border."'>";
 	
+	$url = nstab_get_local_avatarurl($author_id);
+	if (empty($url)) $url = get_avatar_url($author_id);
+	
     $authorbox = $authorboxcontainer .= "
             <div id='nstab_wrapper'>
-                <div id='nstab_authoravatar' " . $circleavatar . " style='background-image: url(\"".nstab_get_avatarurl()."\"); height: ".$nstab_setting_avatarsize."px; width: ".$nstab_setting_avatarsize."px;'></div>
+                <div id='nstab_authoravatar' " . $circleavatar . " style='background-image: url(\"".$url."\"); height: ".$nstab_setting_avatarsize."px; width: ".$nstab_setting_avatarsize."px;'></div>
                 <div id='nstab_authorbio' style='height: ".$nstab_setting_avatarsize."px;'>
                 <div id='header'>
                     <span id='headline' style='font-size: " . $nstab_setting_fontsizeheadline . "em;'>" . $nstab_setting_headline . " " . get_the_author_meta("display_name") . "</span>

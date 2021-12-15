@@ -6,11 +6,11 @@ msgstr "F&uuml;gt eine moderne anpassbare Autoren Info Box am Ende deines Beitra
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: authorbox.php:55
+#: authorbox.php:57
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
-#: authorbox.php:62
+#: authorbox.php:64
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
