@@ -72,7 +72,7 @@ You have two options. Either you choose the setting that this plugins author box
 
 == Changelog ==
 
-= 1.x.x =
+= 1.0.5 =
 * Fixed a bug that may caused local avatars do not work properly in some cases
 * Fixed a PHP error while saving user specific settings
 * General settings page separated in tabs
