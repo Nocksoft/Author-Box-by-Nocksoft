@@ -2,15 +2,15 @@
 msgid "Adds a modern customizable author info box at the end of your posts and implements support for local avatars."
 msgstr "F&uuml;gt eine moderne anpassbare Autoren Info Box am Ende deines Beitrages ein und bringt Support f&uuml;r lokale Avatare."
 
-#: author-box-by-nocksoft.php:20
+#: author-box-by-nocksoft.php:22
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: authorbox.php:57
+#: authorbox.php:55
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
-#: authorbox.php:64
+#: authorbox.php:62
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
@@ -50,43 +50,47 @@ msgstr "Weitere Einstellungen"
 msgid "Hide the author box of default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty-One)"
 msgstr "Verstecke die Autor-Biografie (Author Box) vom WordPress Standard-Theme (Getestet von Twenty Nineteen bis Twenty Twenty-One)"
 
-#: settings-global.php:112
+#: settings-global.php:103
+msgid "If your theme offers you an option to hide the author box of your theme, you should use your theme's setting for this."
+msgstr "Wenn dein Theme dir eine Option anbietet, die Autor-Biografie (Author Box) deines Themes auszublenden, solltest du die Einstellung deines Themes dafür verwenden."
+
+#: settings-global.php:113
 msgid "Basic"
 msgstr "Grundlegend"
 
-#: settings-global.php:115
+#: settings-global.php:116
 msgid "Arial"
 msgstr "Arial"
 
-#: settings-global.php:116
+#: settings-global.php:117
 msgid "Inherit from website"
 msgstr "Von Webseite erben"
 
-#: settings-global.php:118
+#: settings-global.php:119
 msgid "Font of Author Box"
 msgstr "Schriftart der Author Box"
 
-#: settings-global.php:119
+#: settings-global.php:120
 msgid "Inherit from website means that the fonts of the WordPress theme are used."
 msgstr "Von Webseite erben bedeutet, dass die Schriftart des WordPress Themes verwendet wird."
 
-#: settings-global.php:122
+#: settings-global.php:123
 msgid "Show Shadow of Author Box"
 msgstr "Stelle einen Schatten um die Author Box dar"
 
-#: settings-global.php:128
+#: settings-global.php:129
 msgid "Border"
 msgstr "Rahmen"
 
-#: settings-global.php:131
+#: settings-global.php:132
 msgid "Show Border of Author Box"
 msgstr "Stelle den Rahmen der Author Box dar"
 
-#: settings-global.php:134
+#: settings-global.php:135
 msgid "Color of border"
 msgstr "Farbe des Rahmens"
 
-#: settings-global.php:137
+#: settings-global.php:138
 msgid "Size of border"
 msgstr "Breite des Rahmens"
 
@@ -146,54 +150,54 @@ msgstr "Zeige einen Link zum Archiv des Autors an"
 msgid "Save Settings"
 msgstr "Einstellungen speichern"
 
-#: settings-user.php:12
+#: settings-user.php:11
 msgid "Here you can make further settings for your avatar or other personal settings. The WordPress administrator can adjust global settings under Settings -> Author Box."
 msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar oder weitere pers&ouml;nliche Einstellungen vornehmen. Globale Einstellungen kann der WordPress-Administrator unter Einstellungen -> Author Box vornehmen."
 
-#: settings-user.php:16
+#: settings-user.php:15
 msgid "Local avatars"
 msgstr "Lokale Avatare"
 
-#: settings-user.php:19
+#: settings-user.php:18
 msgid "Use local avatars instead of Gravatar (Enter the URL to your avatar in the input field below)"
 msgstr "Verwende lokale Avatare an Stelle von Gravatar (Trage die URL zu deinem Profilbild in das untere Eingabefeld ein)"
 
-#: settings-user.php:24
+#: settings-user.php:23
 msgid "Avatar (URL)"
 msgstr "Avatar (URL)"
 
-#: settings-user.php:27
+#: settings-user.php:26
 msgid "Avatar URL (e.g. https://yoursite.com/avatar.jpg)"
 msgstr "Avatar URL (z.B. https://deineseite.de/avatar.jpg)"
 
-#: settings-user.php:28
+#: settings-user.php:27
 msgid "Please enter a valid URL to your avatar, so that it can be displayed in the author box. You will get the best results if your avatar has the same width and height dimensions."
 msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an, damit dieses in der Author Box angezeigt werden kann. Das beste Ergebnis erh&auml;ltst du, wenn dein Profilbild die gleiche H&ouml;he und Breite aufweist."
 
-#: settings-user.php:33
+#: settings-user.php:32
 msgid "Your Position"
 msgstr "Deine Position"
 
-#: settings-user.php:36
+#: settings-user.php:35
 msgid "Position (e.g. Founder or Author of YourSite)"
 msgstr "Position (z.B. Gr&uuml;nder oder Autor von DeineSeite)"
 
-#: settings-user.php:37
+#: settings-user.php:36
 msgid "Here you can enter your position. The position is shown below your name in the Author Box."
 msgstr "Hier kannst du deine Position angeben. Die Position wird unterhalb deines Namens in der Author Box angezeigt."
 
-#: settings-user.php:42
+#: settings-user.php:41
 msgid "Homepage / About Me Page"
 msgstr "Homepage / &Uuml;ber Mich Seite"
 
-#: settings-user.php:46
+#: settings-user.php:45
 msgid "Link Text (e.g. Homepage or About Me)"
 msgstr "Link Text (z.B. Homepage oder &Uuml;ber mich)"
 
-#: settings-user.php:47
+#: settings-user.php:46
 msgid "Link URL (e.g. https://yoursite.com)"
 msgstr "Link URL (z.B. https://deineseite.de)"
 
-#: settings-user.php:48
+#: settings-user.php:47
 msgid "This URL will be displayed below your biography in the Author Box."
 msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."

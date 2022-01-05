@@ -1,5 +1,6 @@
 <?php
 
+add_action("admin_menu", "nstab_settings_page");
 function nstab_settings_page() {
     add_submenu_page(
         "options-general.php",
@@ -10,7 +11,6 @@ function nstab_settings_page() {
         "nstab_globalsettings"
     );
 }
-add_action("admin_menu", "nstab_settings_page");
 
 
 add_action("admin_init", function() {
@@ -100,6 +100,7 @@ function nstab_globalsettings() {
 						<td>
 							<input type="checkbox" id="nstab_setting_hidewordpressauthorbox" name="nstab_setting_hidewordpressauthorbox" <?php if ($nstab_setting_hidewordpressauthorbox == true) echo "checked"; ?> />
 							<label for="nstab_setting_hidewordpressauthorbox"><?php echo __("Hide the author box of default WordPress theme (tested from Twenty Nineteen up to Twenty Twenty-One)", "author-box-by-nocksoft"); ?></label>
+							<p class="description"><?php echo __("If your theme offers you an option to hide the author box of your theme, you should use your theme's setting for this.", "author-box-by-nocksoft"); ?></p>
 						</td>
 						</tr>
 					</table>
@@ -135,7 +136,6 @@ function nstab_globalsettings() {
 							</p>
 							<input type="number" id="nstab_setting_bordersize" name="nstab_setting_bordersize" min="1" max="5" step="1" value="<?php echo $nstab_setting_bordersize; ?>" />
 							<label for="nstab_setting_bordersize"><?php echo __("Size of border", "author-box-by-nocksoft"); ?></label>
-							
 						</td>
 						</tr>
 

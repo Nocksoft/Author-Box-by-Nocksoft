@@ -1,7 +1,6 @@
 <?php
 
 function nstab_activate_plugin() {
-    /* Setup default global settings */
 	require plugin_dir_path(__FILE__) . "settings-defaults.php";
 	
 	add_option("nstab_setting_displayauthorboxonposts", $nstab_setting_default_displayauthorboxonposts);
@@ -23,8 +22,12 @@ function nstab_activate_plugin() {
     add_option("nstab_setting_displayauthorsarchive", $nstab_setting_default_displayauthorsarchive);
 }
 
+/* https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/ */
 function nstab_uninstall_plugin() {
-    /* Clear global settings */
+	if (!defined("WP_UNINSTALL_PLUGIN")) {
+		die;
+	}
+	
 	delete_option("nstab_setting_displayauthorboxonposts");
     delete_option("nstab_setting_displayauthorboxonpages");
     delete_option("nstab_setting_hidewordpressauthorbox");

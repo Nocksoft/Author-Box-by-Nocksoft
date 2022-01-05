@@ -4,7 +4,6 @@
 /* Show user settings */
 add_action("show_user_profile", "nstab_usersettings");
 add_action("edit_user_profile", "nstab_usersettings");
-
 function nstab_usersettings($user) {
     ?>
     <h3>Author Box by Nocksoft</h3>
@@ -56,7 +55,6 @@ function nstab_usersettings($user) {
 /* Save user settings */
 add_action("personal_options_update", "nstab_save_usersettings");
 add_action("edit_user_profile_update", "nstab_save_usersettings");
-
 function nstab_save_usersettings($user_id) {
     if (!current_user_can("edit_user", $user_id)) {
         return false;

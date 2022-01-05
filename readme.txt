@@ -2,8 +2,8 @@
 Contributors: nocksoft
 Tags: author box, author bio, author description, local avatars, about author, about me, author profile, author
 Stable tag: trunk
-Requires at least: 4.9
-Tested up to: 5.6
+Requires at least: 5.3
+Tested up to: 5.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Adds a modern customizable author info box at the end of your posts and implemen
 Your blog will become even more personal and authentic. This plugin is available in German and English language.
 
 == Features ==
-* Adds a simple lightweight Author Box at the end of your posts with a short description about the author
+* Adds a simple lightweight Author Box at the end of your posts and/or pages with a short description about the author
 * Adds support for local avatars for authors so that you dont need to use an Gravatar account
 * Option for displaying a link to an own "About Me Page" in Author Box for post authors
 * Adds shortcode for Author Box so that you can insert a Author Box anywhere you want
@@ -73,7 +73,7 @@ You have two options. Either you choose the setting that this plugins author box
 == Changelog ==
 
 = 1.x.x =
-* Fixed a bug that may caused local avatars do not work properly in some themes like Blocksy
+* Fixed a bug that may caused local avatars do not work properly in some cases
 * Fixed a PHP error while saving user specific settings
 * General settings page separated in tabs
 * Added option to inherit font from theme

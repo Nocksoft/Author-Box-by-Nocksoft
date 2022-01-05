@@ -1,10 +1,10 @@
 <?php
 
 /* Author Box Shortcode. */
+add_shortcode("authorbox", "nstab_shortcode_authorbox");
 function nstab_shortcode_authorbox() {
     return nstab_get_authorbox();
 }
-add_shortcode("authorbox", "nstab_shortcode_authorbox");
 
 
 /* Adds Author Box at end of posts and pages automatically. */
@@ -24,9 +24,7 @@ function nstab_add_authorbox($content) {
 }
 
 
-/* --- Drawing of the Author Box --- */
-
-/* Adds Author Box */
+/* Get Author Box HTML. */
 function nstab_get_authorbox() {
 	global $nstab_setting_font;
 	global $nstab_setting_showshadow;
