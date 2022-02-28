@@ -50,13 +50,17 @@ require_once plugin_dir_path(__FILE__) . "/php/authorbox.php";
 require_once plugin_dir_path(__FILE__) . "/php/settings.php";
 
 
-/* --- Load styles --- */
-wp_register_style("author-box-by-nocksoft-style", plugin_dir_url(__FILE__) . "css/style.css");
-wp_enqueue_style("author-box-by-nocksoft-style");
+add_action("wp_enqueue_scripts", "nstab_loadstyles");
+function nstab_loadstyles() {
+	/* --- Load styles --- */
+	wp_register_style("author-box-by-nocksoft-style", plugin_dir_url(__FILE__) . "css/style.css");
+	wp_enqueue_style("author-box-by-nocksoft-style");
 
-if ($nstab_setting_hidewordpressauthorbox == true) {
-	wp_register_style("author-box-by-nocksoft-hidewordpressauthorbox", plugin_dir_url(__FILE__) . "css/hidewordpressauthorbox.css");
-	wp_enqueue_style("author-box-by-nocksoft-hidewordpressauthorbox");
+	global $nstab_setting_hidewordpressauthorbox;
+	if ($nstab_setting_hidewordpressauthorbox == true) {
+		wp_register_style("author-box-by-nocksoft-hidewordpressauthorbox", plugin_dir_url(__FILE__) . "css/hidewordpressauthorbox.css");
+		wp_enqueue_style("author-box-by-nocksoft-hidewordpressauthorbox");
+	}
 }
 
 
