@@ -10,7 +10,7 @@ msgstr "Einstellungen"
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 
-#: authorbox.php:62
+#: authorbox.php:61
 msgid "View Archive"
 msgstr "Archiv anzeigen"
 

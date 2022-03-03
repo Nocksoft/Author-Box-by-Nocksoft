@@ -35,16 +35,16 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
-#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p {
+#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio div {
     margin: 0;
     padding-top: 0.5em;
 }
 
-#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p#nstab_description {
+#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio div#nstab_description {
     line-height: 1.3;
 }
 
-#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio p#nstab_links {
+#author-box-by-nocksoft #nstab_wrapper #nstab_authorbio div#nstab_links {
     padding-top: 0.5em;
     font-style: italic;
 }
