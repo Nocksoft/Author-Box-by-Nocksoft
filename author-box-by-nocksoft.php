@@ -34,6 +34,10 @@ if (is_admin()) {
 	function nstab_loadcolorpicker() {
 		wp_enqueue_style("wp-color-picker");
 		wp_enqueue_script("custom-script-handle", plugin_dir_url(__FILE__) . "js/colorpicker.js", array("wp-color-picker"), false, true);
+
+		/* --- Image picker for local Avatar --- */
+		wp_enqueue_media();
+		wp_enqueue_script("nstab_imagepicker", plugin_dir_url(__FILE__) . "js/imagepicker.js", array("jquery"), false, true);
 	}
 	
 	

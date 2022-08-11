@@ -66,8 +66,7 @@ function nstab_get_authorbox() {
 	$shadow = $nstab_setting_showshadow == true ? "padding: 0.75em; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" : null;
     $border = $nstab_setting_showborder == true ? "padding: 0.75em; border: ".$nstab_setting_bordersize."px solid ".$nstab_setting_bordercolor.";" : null;
 	
-	$url = nstab_get_local_avatarurl($author_id);
-	if (empty($url)) $url = get_avatar_url($author_id);
+	$url = nstab_get_avatarurl($author_id, true);
 	
     $authorbox = "
 		<div id='author-box-by-nocksoft' style='".$font.$shadow.$border."'>

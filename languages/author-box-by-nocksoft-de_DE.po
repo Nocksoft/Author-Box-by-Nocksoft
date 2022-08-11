@@ -155,49 +155,53 @@ msgid "Here you can make further settings for your avatar or other personal sett
 msgstr "Hier kannst du weitere Einstellungen in Bezug auf deinen Avatar oder weitere pers&ouml;nliche Einstellungen vornehmen. Globale Einstellungen kann der WordPress-Administrator unter Einstellungen -> Author Box vornehmen."
 
 #: settings-user.php:15
-msgid "Local avatars"
-msgstr "Lokale Avatare"
+msgid "Local Avatar"
+msgstr "Lokaler Avatar"
 
-#: settings-user.php:18
-msgid "Use local avatars instead of Gravatar (Enter the URL to your avatar in the input field below)"
-msgstr "Verwende lokale Avatare an Stelle von Gravatar (Trage die URL zu deinem Profilbild in das untere Eingabefeld ein)"
+#: settings-user.php:19
+msgid "Use a local avatar instead of Gravatar (choose your avatar below)"
+msgstr "Verwende einen lokalen Avatar an Stelle von Gravatar (w&auml;hle unten deinen Avatar)"
 
-#: settings-user.php:23
-msgid "Avatar (URL)"
-msgstr "Avatar (URL)"
+#: settings-user.php:29
+msgid "Avatar URL (e.g. https://yoursite.com/avatar.jpg) -> will be filled automatically"
+msgstr "Avatar URL (z.B. https://deineseite.de/avatar.jpg) -> wird automatisch ausgef&uuml;llt"
 
-#: settings-user.php:26
-msgid "Avatar URL (e.g. https://yoursite.com/avatar.jpg)"
-msgstr "Avatar URL (z.B. https://deineseite.de/avatar.jpg)"
+#: settings-user.php:31
+msgid "Please select an avatar using the button below (square avatars are recommended). Gravatar may be used as fallback."
+msgstr "W&auml;hle bitte &uuml;ber den Button unten einen Avatar aus (quadratische Avatare sind empfohlen). Als Fallback kann unter Umst&auml;nden Gravatar benutzt werden."
 
-#: settings-user.php:27
-msgid "Please enter a valid URL to your avatar, so that it can be displayed in the author box. You will get the best results if your avatar has the same width and height dimensions."
-msgstr "Gebe bitte eine g&uuml;ltige URL zu deinem Avatar an, damit dieses in der Author Box angezeigt werden kann. Das beste Ergebnis erh&auml;ltst du, wenn dein Profilbild die gleiche H&ouml;he und Breite aufweist."
+#: settings-user.php:33
+msgid "Choose Avatar"
+msgstr "Avatar w&auml;hlen"
 
-#: settings-user.php:32
+#: settings-user.php:34
+msgid "Remove Avatar"
+msgstr "Avatar entfernen"
+
+#: settings-user.php:40
 msgid "Your Position"
 msgstr "Deine Position"
 
-#: settings-user.php:35
+#: settings-user.php:43
 msgid "Position (e.g. Founder or Author of YourSite)"
 msgstr "Position (z.B. Gr&uuml;nder oder Autor von DeineSeite)"
 
-#: settings-user.php:36
+#: settings-user.php:44
 msgid "Here you can enter your position. The position is shown below your name in the Author Box."
 msgstr "Hier kannst du deine Position angeben. Die Position wird unterhalb deines Namens in der Author Box angezeigt."
 
-#: settings-user.php:41
+#: settings-user.php:49
 msgid "Homepage / About Me Page"
 msgstr "Homepage / &Uuml;ber Mich Seite"
 
-#: settings-user.php:45
+#: settings-user.php:53
 msgid "Link Text (e.g. Homepage or About Me)"
 msgstr "Link Text (z.B. Homepage oder &Uuml;ber mich)"
 
-#: settings-user.php:46
+#: settings-user.php:54
 msgid "Link URL (e.g. https://yoursite.com)"
 msgstr "Link URL (z.B. https://deineseite.de)"
 
-#: settings-user.php:47
+#: settings-user.php:55
 msgid "This URL will be displayed below your biography in the Author Box."
 msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."

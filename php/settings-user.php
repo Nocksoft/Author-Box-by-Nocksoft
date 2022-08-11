@@ -12,19 +12,27 @@ function nstab_usersettings($user) {
 
     <table class="form-table">
         <tr>
-            <th><label for="nstab_setting_localavatar"><?php echo __("Local avatars", "author-box-by-nocksoft"); ?></label></th>
+            <th><label for="nstab_setting_localavatar"><?php echo __("Local Avatar", "author-box-by-nocksoft"); ?></label></th>
             <td>
-                <input type="checkbox" id="nstab_setting_localavatar" name="nstab_setting_localavatar" <?php if (get_the_author_meta("nstab_setting_localavatar", $user->ID) == "on") echo "checked"; ?>>
-                <label for="nstab_setting_localavatar"><?php echo __("Use local avatars instead of Gravatar (Enter the URL to your avatar in the input field below)", "author-box-by-nocksoft"); ?></label>
-            </td>
-        </tr>
-
-        <tr>
-            <th><label for="nstab_setting_avatarurl"><?php echo __("Avatar (URL)", "author-box-by-nocksoft"); ?></label></th>
-            <td>
-                <?php $avatarurl = get_the_author_meta("nstab_setting_avatarurl", $user->ID); ?>
-                <input type="text" id="nstab_setting_avatarurl" name="nstab_setting_avatarurl" class="regular-text" placeholder="<?php echo __("Avatar URL (e.g. https://yoursite.com/avatar.jpg)", "author-box-by-nocksoft"); ?>" value="<?php echo $avatarurl; ?>" />
-                <p class="description"><?php echo __("Please enter a valid URL to your avatar, so that it can be displayed in the author box. You will get the best results if your avatar has the same width and height dimensions.", "author-box-by-nocksoft"); ?></p>
+                <p>
+                    <input type="checkbox" id="nstab_setting_localavatar" name="nstab_setting_localavatar" <?php if (get_the_author_meta("nstab_setting_localavatar", $user->ID) == "on") echo "checked"; ?>>
+                    <label for="nstab_setting_localavatar"><?php echo __("Use a local avatar instead of Gravatar (choose your avatar below)", "author-box-by-nocksoft"); ?></label>
+                </p>
+            
+                <?php
+                    $avatarurl = nstab_get_avatarurl($user->ID, true, true);
+                    remove_filter("get_avatar_data", "nstab_get_avatar_data");
+                    $gravatarurl = get_avatar_url($user->ID);
+                    add_filter("get_avatar_data", "nstab_get_avatar_data", 10, 2);
+                ?>
+                <p><img id="nstab_avatar" loading="lazy" width="96" height="96" src="<?php echo $avatarurl; ?>"></p>
+                <p><input type="text" id="nstab_setting_avatarurl" name="nstab_setting_avatarurl" class="regular-text" placeholder="<?php echo __("Avatar URL (e.g. https://yoursite.com/avatar.jpg) -> will be filled automatically", "author-box-by-nocksoft"); ?>" value="<?php echo $avatarurl; ?>" default="<?php echo $gravatarurl; ?>" /></p>
+                <p style="display: none;"><input type="hidden" id="nstab_setting_avatarid" name="nstab_setting_avatarid" class="regular-text" value="<?php echo attachment_url_to_postid($avatarurl); ?>" /></p>
+                <p class="description"><?php echo __("Please select an avatar using the button below (square avatars are recommended). Gravatar may be used as fallback.", "author-box-by-nocksoft"); ?></p>
+                <p>
+                    <input type="button" id="nstab_setavatar" class="button" value="<?php echo __("Choose Avatar"); ?>"/>
+                    <input type="button" id="nstab_deleteavatar" class="button" value="<?php echo __("Remove Avatar"); ?>"/>
+                </p>
             </td>
         </tr>
 
