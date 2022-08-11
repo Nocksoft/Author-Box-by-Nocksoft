@@ -16,6 +16,10 @@ function nstab_get_local_avatarurl($user_id) {
  */
 add_filter("get_avatar_data", "nstab_get_avatar_data", 10, 2);
 function nstab_get_avatar_data($args, $id_or_email) {
+	if (!empty($args["force_default"])) {
+		return $args;
+	}
+	
 	$url = nstab_get_local_avatarurl(nstab_get_user_id($id_or_email));
 	if (!empty($url)) $args["url"] = $url;
 	
