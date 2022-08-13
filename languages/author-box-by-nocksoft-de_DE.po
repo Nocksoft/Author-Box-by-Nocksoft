@@ -162,46 +162,46 @@ msgstr "Lokaler Avatar"
 msgid "Use a local avatar instead of Gravatar (choose your avatar below)"
 msgstr "Verwende einen lokalen Avatar an Stelle von Gravatar (w&auml;hle unten deinen Avatar)"
 
-#: settings-user.php:29
+#: settings-user.php:27
 msgid "Avatar URL (e.g. https://yoursite.com/avatar.jpg) -> will be filled automatically"
 msgstr "Avatar URL (z.B. https://deineseite.de/avatar.jpg) -> wird automatisch ausgef&uuml;llt"
 
-#: settings-user.php:31
+#: settings-user.php:29
 msgid "Please select an avatar using the button below (square avatars are recommended). Gravatar may be used as fallback."
 msgstr "W&auml;hle bitte &uuml;ber den Button unten einen Avatar aus (quadratische Avatare sind empfohlen). Als Fallback kann unter Umst&auml;nden Gravatar benutzt werden."
 
-#: settings-user.php:33
+#: settings-user.php:31
 msgid "Choose Avatar"
 msgstr "Avatar w&auml;hlen"
 
-#: settings-user.php:34
+#: settings-user.php:32
 msgid "Remove Avatar"
 msgstr "Avatar entfernen"
 
-#: settings-user.php:40
+#: settings-user.php:38
 msgid "Your Position"
 msgstr "Deine Position"
 
-#: settings-user.php:43
+#: settings-user.php:41
 msgid "Position (e.g. Founder or Author of YourSite)"
 msgstr "Position (z.B. Gr&uuml;nder oder Autor von DeineSeite)"
 
-#: settings-user.php:44
+#: settings-user.php:42
 msgid "Here you can enter your position. The position is shown below your name in the Author Box."
 msgstr "Hier kannst du deine Position angeben. Die Position wird unterhalb deines Namens in der Author Box angezeigt."
 
-#: settings-user.php:49
+#: settings-user.php:47
 msgid "Homepage / About Me Page"
 msgstr "Homepage / &Uuml;ber Mich Seite"
 
-#: settings-user.php:53
+#: settings-user.php:51
 msgid "Link Text (e.g. Homepage or About Me)"
 msgstr "Link Text (z.B. Homepage oder &Uuml;ber mich)"
 
-#: settings-user.php:54
+#: settings-user.php:52
 msgid "Link URL (e.g. https://yoursite.com)"
 msgstr "Link URL (z.B. https://deineseite.de)"
 
-#: settings-user.php:55
+#: settings-user.php:53
 msgid "This URL will be displayed below your biography in the Author Box."
 msgstr "Diese URL wird unterhalb deiner Biografie in der Author Box angezeigt."

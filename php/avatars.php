@@ -23,6 +23,16 @@ function nstab_get_avatarurl($user_id, $fallback = false, $forcelocalifexists = 
 }
 
 
+/* Returns always the Gravatar URL. */
+function nstab_get_gravatar_url($user_id) {
+	remove_filter("get_avatar_data", "nstab_get_avatar_data");
+	$gravatarurl = get_avatar_url($user_id);
+	add_filter("get_avatar_data", "nstab_get_avatar_data", 10, 2);
+
+	return $gravatarurl;
+}
+
+
 /**
  * Overrides the avatar data.
  * https://developer.wordpress.org/reference/functions/get_avatar_data/

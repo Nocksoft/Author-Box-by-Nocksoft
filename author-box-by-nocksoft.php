@@ -30,10 +30,11 @@ if (is_admin()) {
 	require_once plugin_dir_path(__FILE__) . "/php/settings-global.php";
 	require_once plugin_dir_path(__FILE__) . "/php/settings-user.php";
 	
-	add_action("admin_enqueue_scripts", "nstab_loadcolorpicker");
-	function nstab_loadcolorpicker() {
+	add_action("admin_enqueue_scripts", "nstab_loadadminscripts");
+	function nstab_loadadminscripts() {
+		/* --- Color picker --- */
 		wp_enqueue_style("wp-color-picker");
-		wp_enqueue_script("custom-script-handle", plugin_dir_url(__FILE__) . "js/colorpicker.js", array("wp-color-picker"), false, true);
+		wp_enqueue_script("nstab_colorpicker", plugin_dir_url(__FILE__) . "js/colorpicker.js", array("wp-color-picker"), false, true);
 
 		/* --- Image picker for local Avatar --- */
 		wp_enqueue_media();

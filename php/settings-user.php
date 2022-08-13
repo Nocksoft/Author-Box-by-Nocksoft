@@ -21,17 +21,15 @@ function nstab_usersettings($user) {
             
                 <?php
                     $avatarurl = nstab_get_avatarurl($user->ID, true, true);
-                    remove_filter("get_avatar_data", "nstab_get_avatar_data");
-                    $gravatarurl = get_avatar_url($user->ID);
-                    add_filter("get_avatar_data", "nstab_get_avatar_data", 10, 2);
+                    $gravatarurl = nstab_get_gravatar_url($user->ID);
                 ?>
                 <p><img id="nstab_avatar" loading="lazy" width="96" height="96" src="<?php echo $avatarurl; ?>"></p>
-                <p><input type="text" id="nstab_setting_avatarurl" name="nstab_setting_avatarurl" class="regular-text" placeholder="<?php echo __("Avatar URL (e.g. https://yoursite.com/avatar.jpg) -> will be filled automatically", "author-box-by-nocksoft"); ?>" value="<?php echo $avatarurl; ?>" default="<?php echo $gravatarurl; ?>" /></p>
+                <p><input type="text" id="nstab_setting_avatarurl" name="nstab_setting_avatarurl" class="regular-text" placeholder="<?php echo __("Avatar URL (e.g. https://yoursite.com/avatar.jpg) -> will be filled automatically", "author-box-by-nocksoft"); ?>" value="<?php echo $avatarurl; ?>" gravatarurl="<?php echo $gravatarurl; ?>" /></p>
                 <p style="display: none;"><input type="hidden" id="nstab_setting_avatarid" name="nstab_setting_avatarid" class="regular-text" value="<?php echo attachment_url_to_postid($avatarurl); ?>" /></p>
                 <p class="description"><?php echo __("Please select an avatar using the button below (square avatars are recommended). Gravatar may be used as fallback.", "author-box-by-nocksoft"); ?></p>
                 <p>
-                    <input type="button" id="nstab_setavatar" class="button" value="<?php echo __("Choose Avatar"); ?>"/>
-                    <input type="button" id="nstab_deleteavatar" class="button" value="<?php echo __("Remove Avatar"); ?>"/>
+                    <input type="button" id="nstab_setavatar" class="button" value="<?php echo __("Choose Avatar", "author-box-by-nocksoft"); ?>"/>
+                    <input type="button" id="nstab_deleteavatar" class="button" value="<?php echo __("Remove Avatar", "author-box-by-nocksoft"); ?>"/>
                 </p>
             </td>
         </tr>

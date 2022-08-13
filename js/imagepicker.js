@@ -34,7 +34,7 @@ imagepicker.on("open", function() {
 });
 
 document.getElementById("nstab_deleteavatar").addEventListener("click", function() {
-	var url = inputUrl.getAttribute("default");
+	var url = inputUrl.getAttribute("gravatarurl");
 	img.setAttribute("src", url);
 	inputUrl.setAttribute("value", url);
 });
