@@ -1,6 +1,6 @@
 === Author Box by Nocksoft ===
 Contributors: nocksoft
-Tags: author box, author bio, author description, local avatars, about author, about me, author profile, author
+Tags: author box, author bio, author description, about author, about me, author profile, author
 Stable tag: trunk
 Requires at least: 5.3
 Tested up to: 5.9
@@ -11,31 +11,31 @@ Adds a modern author info box at the end of your posts and implements local avat
 
 
 == Description ==
-Adds a modern customizable author info box at the end of your posts and implements support for local avatars. You can display a simple author bio box in your posts and pages to show your readers and followers who you are.
-Your blog will become even more personal and authentic. This plugin is available in German and English language.
+Adds a modern customizable author info box at the end of your posts and pages with a short description about the author. You can display a simple author bio box in your posts and pages to show your readers and followers who you are.
+Your blog will become even more personal and authentic. This plugin is available in German and English language and is fully compatible with the plugin "Local Avatars by Nocksoft".
 
 == Features ==
 * Adds a simple lightweight Author Box at the end of your posts and/or pages with a short description about the author
-* Adds support for local avatars for authors so that you dont need to use an Gravatar account
 * Option for displaying a link to an own "About Me Page" in Author Box for post authors
 * Adds shortcode for Author Box so that you can insert a Author Box anywhere you want
 * Allows to hide the author box of default WordPress theme
+* Fully compatible with the plugin "Local Avatars by Nocksoft"
 
 == Setup ==
 * Install plugin.
 * (optional) Go to "Settings" -> "Author Box" to setup global settings like font sizes or other settings like look of avatars.
 * Go to user profiles to enter biographical info.
-* (optional) Go to user profiles to tick local avatars and enter a URL to you personal avatar.
-* (optional) Go to user profiles to enter other informations about the author.
+* (optional) Go to user profiles to enter some informations about the author.
+* (optional) Go to Plugins and install the recommended plugin "Local Avatars by Nocksoft" to use local avatars.
 
 == Shortcode ==
 `[authorbox]`
 
 == Frequently Asked Questions ==
  
-= How can I change the avatar for my user? =
+= How can I change the avatar for my author box? =
 
-You have two options. Either through Gravatar, or you can specify a URL to a previously uploaded local image in your user profile settings. This setting can be made separately for each user.
+You have two options. Either through Gravatar, or you can use a local image in your user profile settings. This setting can be made separately for each user. But for this, you need to install the additional plugin "Local Avatars by Nocksoft" first.
 
 = How can I change the biography about me? =
 
@@ -60,7 +60,7 @@ function remove_authorbox() {
 
 = What if my theme also shows an author box? =
 
-You have two options. Either you choose the setting that this plugins author box is hidden (you can still take advantage of the local avatars) or you choose the setting that the author box of your theme is no longer displayed. For the WordPress default themes you will find a suitable setting in this plugins settings.
+You have to disable the author box of your theme. How to do this depends on your theme. But for the WordPress default themes you will find a suitable setting in this plugins settings.
 
 == Installation ==
 
@@ -75,8 +75,7 @@ You have two options. Either you choose the setting that this plugins author box
 = 1.x.x =
 * Fixed PHP warnings "wp_register_style was called incorrectly" and "wp_enqueue_style was called incorrectly"
 * Fixed a bug that may caused font family do not work properly in some cases
-* Fixed a bug that may caused default avatars in discussion settings do not show properly
-* Added Image Uploader for local avatars
+* Moved local avatars feature to a separate plugin "Local Avatars by Nocksoft" (https://wordpress.org/plugins/local-avatars-by-nocksoft/)
 
 = 1.0.5 =
 * Fixed a bug that may caused local avatars do not work properly in some cases

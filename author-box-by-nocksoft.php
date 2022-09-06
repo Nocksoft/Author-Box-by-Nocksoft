@@ -6,7 +6,7 @@
 	Author: Rafael Nockmann @ Nocksoft
 	Author URI: https://nocksoft.de
 	Plugin URI: https://github.com/Nocksoft/Author-Box-by-Nocksoft
-	Description: Adds a modern customizable author info box at the end of your posts and implements support for local avatars.
+	Description: Adds a modern customizable author info box at the end of your posts and pages with some information about the author.
 	Text Domain: author-box-by-nocksoft
 	License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -35,10 +35,6 @@ if (is_admin()) {
 		/* --- Color picker --- */
 		wp_enqueue_style("wp-color-picker");
 		wp_enqueue_script("nstab_colorpicker", plugin_dir_url(__FILE__) . "js/colorpicker.js", array("wp-color-picker"), false, true);
-
-		/* --- Image picker for local Avatar --- */
-		wp_enqueue_media();
-		wp_enqueue_script("nstab_imagepicker", plugin_dir_url(__FILE__) . "js/imagepicker.js", array("jquery"), false, true);
 	}
 	
 	
@@ -50,7 +46,6 @@ if (is_admin()) {
 
 
 /* --- Load scripts --- */
-require_once plugin_dir_path(__FILE__) . "/php/avatars.php";
 require_once plugin_dir_path(__FILE__) . "/php/authorbox.php";
 require_once plugin_dir_path(__FILE__) . "/php/settings.php";
 

@@ -50,8 +50,6 @@ function nstab_uninstall_plugin() {
     $users = get_users();
     foreach ($users as $user) {
         $id = $user->ID;
-        delete_user_meta($id, "nstab_setting_localavatar");
-        delete_user_meta($id, "nstab_setting_avatarurl");
         delete_user_meta($id, "nstab_setting_authorposition");
         delete_user_meta($id, "nstab_setting_homepage_linktext");
         delete_user_meta($id, "nstab_setting_homepage_linkurl");
