@@ -1,7 +1,7 @@
 === Author Box by Nocksoft ===
 Contributors: nocksoft
 Tags: author box, author bio, author description, about author, about me, author profile, author
-Stable tag: trunk
+Stable tag: 1.0.5
 Requires at least: 5.3
 Tested up to: 5.9
 License: GPLv2 or later

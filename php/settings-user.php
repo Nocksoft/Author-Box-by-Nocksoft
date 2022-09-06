@@ -20,7 +20,7 @@ function nstab_usersettings($user) {
             <th><label for="nstab_setting_authorposition"><?php echo __("Your Position", "author-box-by-nocksoft"); ?></label></th>
             <td>
                 <?php $authorposition = get_the_author_meta("nstab_setting_authorposition", $user->ID); ?>
-                <input type="text" id="nstab_setting_authorposition" name="nstab_setting_authorposition" class="regular-text" placeholder="<?php echo __("Position (e.g. Founder or Author of YourSite)", "author-box-by-nocksoft"); ?>" value="<?php echo $authorposition; ?>" />
+                <input type="text" id="nstab_setting_authorposition" name="nstab_setting_authorposition" class="regular-text" placeholder="<?php echo __("Position (e.g. Founder or Author of YourSite)", "author-box-by-nocksoft"); ?>" value="<?php echo esc_textarea($authorposition); ?>" />
                 <p class="description"><?php echo __("Here you can enter your position. The position is shown below your name in the Author Box.", "author-box-by-nocksoft"); ?></p>
             </td>
         </tr>
@@ -30,8 +30,8 @@ function nstab_usersettings($user) {
             <td>
                 <?php $linktext = get_the_author_meta("nstab_setting_homepage_linktext", $user->ID); ?>
                 <?php $linkurl = get_the_author_meta("nstab_setting_homepage_linkurl", $user->ID); ?>
-                <input type="text" id="nstab_setting_homepage_linktext" name="nstab_setting_homepage_linktext" class="regular-text" placeholder="<?php echo __("Link Text (e.g. Homepage or About Me)", "author-box-by-nocksoft"); ?>" value="<?php echo $linktext; ?>" />
-                <input type="text" id="nstab_setting_homepage_linkurl" name="nstab_setting_homepage_linkurl" class="regular-text" placeholder="<?php echo __("Link URL (e.g. https://yoursite.com)", "author-box-by-nocksoft"); ?>" value="<?php echo $linkurl; ?>" />
+                <input type="text" id="nstab_setting_homepage_linktext" name="nstab_setting_homepage_linktext" class="regular-text" placeholder="<?php echo __("Link Text (e.g. Homepage or About Me)", "author-box-by-nocksoft"); ?>" value="<?php echo esc_textarea($linktext); ?>" />
+                <input type="text" id="nstab_setting_homepage_linkurl" name="nstab_setting_homepage_linkurl" class="regular-text" placeholder="<?php echo __("Link URL (e.g. https://yoursite.com)", "author-box-by-nocksoft"); ?>" value="<?php echo esc_url($linkurl); ?>" />
                 <p class="description"><?php echo __("This URL will be displayed below your biography in the Author Box.", "author-box-by-nocksoft"); ?></p>
             </td>
         </tr>
@@ -48,9 +48,9 @@ function nstab_save_usersettings($user_id) {
         return false;
     }
     else {
-		update_usermeta($user_id, "nstab_setting_authorposition", trim($_POST["nstab_setting_authorposition"]));
-        update_usermeta($user_id, "nstab_setting_homepage_linktext", trim($_POST["nstab_setting_homepage_linktext"]));
-        update_usermeta($user_id, "nstab_setting_homepage_linkurl", trim($_POST["nstab_setting_homepage_linkurl"]));
+		update_usermeta($user_id, "nstab_setting_authorposition", sanitize_text_field($_POST["nstab_setting_authorposition"]));
+        update_usermeta($user_id, "nstab_setting_homepage_linktext", sanitize_text_field($_POST["nstab_setting_homepage_linktext"]));
+        update_usermeta($user_id, "nstab_setting_homepage_linkurl", sanitize_url($_POST["nstab_setting_homepage_linkurl"]));
     }
 }
 
