@@ -3,7 +3,7 @@ Contributors: nocksoft
 Tags: author box, author bio, author description, about author, about me, author profile, author
 Stable tag: 1.0.5
 Requires at least: 5.3
-Tested up to: 5.9
+Tested up to: 6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
