@@ -24,9 +24,6 @@ function nstab_activate_plugin() {
 
 /* https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/ */
 function nstab_uninstall_plugin() {
-	if (!defined("WP_UNINSTALL_PLUGIN")) {
-		die;
-	}
 	
 	delete_option("nstab_setting_displayauthorboxonposts");
     delete_option("nstab_setting_displayauthorboxonpages");
