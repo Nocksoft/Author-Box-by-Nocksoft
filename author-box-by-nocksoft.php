@@ -2,7 +2,7 @@
 
 /*
 	Plugin Name: Author Box by Nocksoft
-	Version: 1.0.5
+	Version: 1.1.0
 	Author: Rafael Nockmann @ Nocksoft
 	Author URI: https://nocksoft.de
 	Plugin URI: https://github.com/Nocksoft/Author-Box-by-Nocksoft

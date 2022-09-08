@@ -1,7 +1,7 @@
 === Author Box by Nocksoft ===
 Contributors: nocksoft
 Tags: author box, author bio, author description, about author, about me, author profile, author
-Stable tag: 1.0.5
+Stable tag: 1.1.0
 Requires at least: 5.3
 Tested up to: 6.0
 License: GPLv2 or later
@@ -72,7 +72,7 @@ You have to disable the author box of your theme. How to do this depends on your
 
 == Changelog ==
 
-= 1.x.x =
+= 1.1.0 =
 * Fixed PHP warnings "wp_register_style was called incorrectly" and "wp_enqueue_style was called incorrectly"
 * Fixed a bug that may caused font family do not work properly in some cases
 * Moved local avatars feature to a separate plugin "Local Avatars by Nocksoft" (https://wordpress.org/plugins/local-avatars-by-nocksoft/)
