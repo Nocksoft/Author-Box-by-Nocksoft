@@ -75,6 +75,7 @@ You have to disable the author box of your theme. How to do this depends on your
 = 1.x.x =
 * Fixed a bug that caused global settings heading do not show
 * Fixed a bug that caused an error during uninstall
+* Fixed a bug that caused Author Box from default WordPress theme not to be hidden
 
 = 1.1.0 =
 * Fixed PHP warnings "wp_register_style was called incorrectly" and "wp_enqueue_style was called incorrectly"
